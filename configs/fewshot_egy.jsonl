@@ -1,0 +1,8 @@
+{"intent": "alarm_set", "seed": "تكفى حط منبه [date : بكره] على [time : ستة الصبح]", "variants": ["صحيني [date : بكرة] الساعة [time : ستة الصبح]", "اظبطلي alarm [date : بكرة] على [time : ٦ الصبح]"]}
+{"intent": "play_music", "seed": "أبغى أسمع أغاني [artist_name : محمد عبده]", "variants": ["عايز أسمع أغاني [artist_name : محمد عبده]", "شغلي أي حاجة من أغاني [artist_name : محمد عبده]"]}
+{"intent": "weather_query", "seed": "كيف الجو في [place_name : جدة] [date : يوم الجمعة]", "variants": ["الجو هيبقى عامل ايه في [place_name : جدة] [date : يوم الجمعة]", "هي هتمطر في [place_name : اسكندرية] [date : الجمعة دي]؟"]}
+{"intent": "calendar_set", "seed": "ذكرني أتصل على [relation : أمي] [timeofday : الليلة]", "variants": ["فكرني أكلم [relation : ماما] [timeofday : بالليل]", "اعملي reminder عشان أكلم [relation : ماما] [timeofday : آخر اليوم]"]}
+{"intent": "iot_hue_lightoff", "seed": "طفي الأنوار في [house_place : غرفة النوم]", "variants": ["اطفي النور في [house_place : أوضة النوم]", "قفل اللمبة اللي في [house_place : أوضة النوم] لو سمحت"]}
+{"intent": "email_query", "seed": "هل وصلني إيميل جديد", "variants": ["هو جالي إيميل جديد؟", "عندي mails جديدة ولا لأ؟"]}
+{"intent": "datetime_query", "seed": "كم الساعة الحين", "variants": ["الساعة كام دلوقتي؟", "هي الساعة بقت كام؟"]}
+{"intent": "transport_ticket", "seed": "احجز لي تذكرة [transport_type : قطار] إلى [place_name : الدمام]", "variants": ["احجزلي تذكرة [transport_type : قطر] رايح [place_name : الدمام]", "عايز أحجز تذكرة [transport_type : قطر] على [place_name : أسوان]"]}
