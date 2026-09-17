@@ -9,13 +9,13 @@ __pycache__/
 # Datasets live on the HF Hub; only small config files are tracked.
 data/*
 !data/annotation/
-models/
-adapters/
-logs/
+/models/
+/adapters/
+/logs/
 batch_results_*.jsonl
 
 # local scratch: big downloads, session archives - never pushed
-local/
+/local/
 .pytest_cache/
 .ruff_cache/
 
