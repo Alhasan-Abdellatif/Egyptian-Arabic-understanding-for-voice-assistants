@@ -114,7 +114,7 @@ src/lahja/
   eval/         metrics, runners, report, figures, latency benchmarks
 configs/        label schema, LoRA config, few-shot examples for generation
 results/        scores, per-item predictions, summary.md, figures/
-docs/           results, examples, training guides, publishing
+docs/           results, examples, training guides
 tests/          37 tests
 ```
 
