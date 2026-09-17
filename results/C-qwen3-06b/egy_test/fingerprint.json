@@ -1,0 +1,14 @@
+{
+  "backend": "mlx",
+  "model": "Qwen/Qwen3-0.6B",
+  "adapter": "adapters/C-qwen3-06b",
+  "prompt": "sft",
+  "shots": 0,
+  "weights": [
+    [
+      "adapters.safetensors",
+      40412738,
+      1789580432
+    ]
+  ]
+}

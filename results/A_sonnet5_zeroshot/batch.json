@@ -1,0 +1,1 @@
+{"batch_id": "msgbatch_01WMtxgwi9wPZJ1MpL86wQBH", "n_requests": 500, "cmd": "submit", "run_name": "A_sonnet5_zeroshot", "eval_set": ["data/processed/egy_test.jsonl", "data/processed/massive_ar_test.jsonl"], "model": "claude-sonnet-5", "limit": 300, "shots": 0, "shots_from": "data/processed/massive_ar_train.jsonl", "prompt": "full", "effort": "low", "max_tokens": 4000}

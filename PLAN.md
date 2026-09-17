@@ -1,4 +1,4 @@
-# Lahja (لهجة): Egyptian-Arabic Voice Assistant Understanding
+# Egyptian-Arabic Voice Assistant Understanding — plan
 
 A 3-day project: fine-tune a small LLM to turn Egyptian Arabic commands into structured tool calls (intent + slots), compare it against a frontier LLM and a BERT encoder, and run it on-device with MLX.
 
@@ -10,6 +10,21 @@ A 3-day project: fine-tune a small LLM to turn Egyptian Arabic commands into str
   - Egyptian only; no LLM judge; speech optional.
 - **Finding:** MASSIVE `ar-SA` is *not* mostly MSA. It is largely Saudi/Gulf colloquial (تكفى، أبغى، حقي) mixed with MSA, and numbers are always spelled out. Wherever this plan says "MSA", read "MASSIVE `ar-SA`". The research question becomes Saudi/MSA → Egyptian transfer.
 - **Generation format:** rewrites are produced in MASSIVE bracket notation, so slot spans are exact by construction. The test set uses the same notation.
+- **2026-09-16, synthetic data:** Sonnet 5 through the Batches API, 4,001 seeds × 2 variants → 8,002 candidates → 7,239 kept.
+  - Rejected: 428 copies of the seed, 220 exact duplicates, 60 near duplicates, 55 with changed slot types.
+  - Egyptian marker rate is 60% in the rewrites vs. 2.8% in the seeds. 27% of the rewrites contain Latin-script words (mostly in variant 2), which is more code-switching than natural speech.
+- **2026-09-16, Day 2 setup:**
+  - **Mac small LLM:** Qwen3-0.6B, which officially lists Egyptian Arabic among its languages. Its chat template gives identical training and inference prompts when thinking is disabled.
+    - Qwen3.5-0.8B was tried first and rejected. Its 248k vocabulary caused an out-of-memory crash at batch 16 on the 16GB M4. At micro-batch 4 it trained at 0.196 steps/s (about 6.8 h per run), and without gradient checkpointing it ran out of memory.
+    - Qwen3-0.6B at micro-batch 4 × 4 accumulation, checkpointing off: 1.82 steps/s, 4.3 GB peak, about 45 min per run.
+  - **Encoder:** CAMeLBERT-DA.
+  - **Short prompt for fine-tuned models:** they learn the label set from data, so their prompt drops the schema. The zero-shot and few-shot baselines keep the full-schema prompt.
+  - **Fixed step budget:** C and D train for the same number of steps (1,200 × batch 16), so D doesn't simply see more examples. That makes a separate C+ run unnecessary.
+- **2026-09-16, first LoRA runs diverged — discarded.** Training loss exploded in both runs (C at step 300: 0.92 → 9.36; D at step 500: 0.41 → 3.42). D partly recovered (val loss 0.165) but scored only 0.31 EM on held-out in-distribution data; C collapsed to constant predictions (3 intents, fixed slot values) and scored 0.00 EM.
+  - **Cause:** `scale: 20.0` is mlx-lm's default for rank 8 with lr 1e-5, and its trainer has no gradient clipping. Pairing it with rank 16 and lr 2e-4 over all 28 layers was unstable.
+  - **Fix:** scale 2.0 (alpha 32 / rank 16, same as the TRL config), lr 1e-4, warmup 100. Retrain C and D; treat every LLM number from the first runs as void.
+- **2026-09-16, retrained D with the fixed config — stable.** No loss spikes; val loss 3.296 → 0.161 (step 800) → 0.090 (step 4800), vs 0.165 for the diverged run. Train 0.072 at the end, so no overfitting. Peak 5.0 GB, ~1.3 steps/s. Log: `logs/train-mlx-D.log`.
+- **Test-set overlap:** 19 of 200 test sentences also appear verbatim in training data (short commands like "امسح المنبه"), and models score much higher on them (e.g. E-D: 0.79 vs 0.61). Report the clean 181-item subset alongside the full 200.
 
 ---
 

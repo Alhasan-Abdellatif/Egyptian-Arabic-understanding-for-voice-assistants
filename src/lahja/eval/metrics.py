@@ -70,6 +70,23 @@ def score_item(gold: Example, raw: str | None) -> dict:
     }
 
 
+def percentiles(values: list[float]) -> dict:
+    """Latency summary. p99 needs ~100+ samples to mean anything; below that it is just the max."""
+    if not values:
+        return {}
+    xs = sorted(values)
+    pick = lambda p: xs[min(int(len(xs) * p), len(xs) - 1)]  # noqa: E731
+    return {
+        "n": len(xs),
+        "mean": round(sum(xs) / len(xs), 4),
+        "p50": round(pick(0.50), 4),
+        "p90": round(pick(0.90), 4),
+        "p95": round(pick(0.95), 4),
+        "p99": round(pick(0.99), 4),
+        "max": round(xs[-1], 4),
+    }
+
+
 def bootstrap_ci(flags: list[int], n_boot: int = 1000, seed: int = 0) -> tuple[float, float]:
     if not flags:
         return 0.0, 0.0

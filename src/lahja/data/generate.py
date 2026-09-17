@@ -21,7 +21,7 @@ from lahja import CONFIGS, DATA
 from lahja.data.massive import to_annotated
 from lahja.data.schema import Example, load_examples, read_jsonl, write_jsonl
 
-MODEL = "claude-sonnet-5" 
+MODEL = "claude-sonnet-5"
 INTERIM = DATA / "interim"
 FEWSHOT = CONFIGS / "fewshot_egy.jsonl"
 TRAIN = DATA / "processed/massive_ar_train.jsonl"

@@ -11,3 +11,13 @@ data/*
 !data/annotation/
 models/
 adapters/
+logs/
+batch_results_*.jsonl
+
+# local scratch: big downloads, session archives - never pushed
+local/
+.pytest_cache/
+.ruff_cache/
+
+# raw session log - saved for reference, not part of the public repo
+docs/conversation_history.md

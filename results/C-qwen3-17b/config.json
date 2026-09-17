@@ -1,0 +1,18 @@
+{
+  "backend": "hf",
+  "model": "Qwen/Qwen3-1.7B",
+  "run_name": "C-qwen3-17b",
+  "eval_set": [
+    "data/processed/egy_test.jsonl",
+    "data/processed/massive_ar_test.jsonl"
+  ],
+  "limit": 300,
+  "shots": 0,
+  "shots_from": "/kaggle/working/lahja/data/processed/massive_ar_train.jsonl",
+  "prompt": "sft",
+  "adapter": "adapters/C-qwen3-17b",
+  "effort": "low",
+  "workers": 8,
+  "chunk": 32,
+  "fresh": false
+}

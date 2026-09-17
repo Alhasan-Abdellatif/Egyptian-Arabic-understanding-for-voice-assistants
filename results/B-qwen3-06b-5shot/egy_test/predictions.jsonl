@@ -1,0 +1,200 @@
+{"id": "egy-main-massive-3161", "raw": "{\"intent\": \"general_joke\", \"slots\": {\"person\": \"يُستقبل\"}}"}
+{"id": "egy-main-massive-4851", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"general_frequency\": \"منبه\"}}"}
+{"id": "egy-main-massive-63", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"منبهاتى\"}}"}
+{"id": "egy-main-massive-4673", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"device_type\": \"المنبهات\"}}"}
+{"id": "egy-main-massive-4712", "raw": "{\"intent\": \"lists_remove\", \"slots\": {\"list_name\": \"متصحينيش بكره\"}}"}
+{"id": "egy-main-massive-6162", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"امسح\"}}"}
+{"id": "egy-main-massive-399", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"شيل\"}}"}
+{"id": "egy-main-massive-4921", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"general_frequency\": \"منبه\"}}"}
+{"id": "egy-main-massive-5082", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"time\": \"ستة الصبح\"}}"}
+{"id": "egy-main-massive-533", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"time_of_day\": \"بليل\"}}"}
+{"id": "egy-main-massive-174", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"يصحيني\", \"time\": \"سبعة الصبح\", \"date\": \"يوم الخميس\"}}"}
+{"id": "egy-main-massive-4081", "raw": "{\"intent\": \"takeaway_order\", \"slots\": {\"order_type\": \"الكلّام\", \"place_name\": \"البيت\", \"item\": \"الكلّام\"}}"}
+{"id": "egy-main-massive-1639", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"device_type\": \"الطى الصوت\"}}"}
+{"id": "egy-main-massive-1352", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"device_type\": \"سماعه\"}}"}
+{"id": "egy-main-massive-3474", "raw": "{\"intent\": \"music_dislikeness\", \"slots\": {\"music_descriptor\": \"صوت الموسيقى\"}}"}
+{"id": "egy-main-massive-5611", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"وطى صوت\"}}"}
+{"id": "egy-main-massive-5550", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"عاوز\"}}"}
+{"id": "egy-main-massive-2205", "raw": "{\"intent\": \"audio_volume_down\", \"slots\": {\"change_amount\": \"2\"}}"}
+{"id": "egy-main-massive-3837", "raw": "{\"intent\": \"audio_volume_mute\", \"slots\": {\"device_type\": \"الموسيقى\"}}"}
+{"id": "egy-main-massive-2796", "raw": "{\"intent\": \"music_dislikeness\", \"slots\": {\"music_type\": \"سماعات\"}}"}
+{"id": "egy-main-massive-1065", "raw": "{\"intent\": \"audio_volume_up\", \"slots\": {\"device_type\": \"الصوت\"}}"}
+{"id": "egy-main-massive-5812", "raw": "{\"intent\": \"audio_volume_mute\", \"slots\": {\"device_type\": \"الافتراضي\"}}"}
+{"id": "egy-main-massive-4155", "raw": "{\"intent\": \"music_dislikeness\", \"slots\": {\"change_amount\": \"5 وثلاثين\"}}"}
+{"id": "egy-main-massive-5579", "raw": "{\"intent\": \"audio_volume_mute\", \"slots\": {\"device_type\": \"الصوت\"}}"}
+{"id": "egy-main-massive-1374", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"صوتك\"}}"}
+{"id": "egy-main-massive-3590", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"اتكلم بصوت عالي\"}}"}
+{"id": "egy-main-massive-1630", "raw": "{\"intent\": \"music_query\", \"slots\": {\"media_type\": \"موسيقى\"}}"}
+{"id": "egy-main-massive-261", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"مش سامعك\"}}"}
+{"id": "egy-main-massive-8404", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"كنت أعرف اكتر عن الحادث ده\"}}"}
+{"id": "egy-main-massive-8029", "raw": "{\"intent\": \"recommendation_events\", \"slots\": {\"event_name\": \"الحدث الجايه النهار\"}}"}
+{"id": "egy-main-massive-9035", "raw": "{\"intent\": \"general_joke\", \"slots\": {\"person\": \"أحمد\"}}"}
+{"id": "egy-main-massive-9103", "raw": "{\"intent\": \"social_post\", \"slots\": {\"event_name\": \"اجتماع النهارده بليل\"}}"}
+{"id": "egy-main-massive-6726", "raw": "{\"intent\": \"social_post\", \"slots\": {\"event_name\": \"اجتماع\"}}"}
+{"id": "egy-main-massive-7289", "raw": "{\"intent\": \"recommendation_events\", \"slots\": {\"event_name\": \"جابر\"}}"}
+{"id": "egy-main-massive-7080", "raw": "{\"intent\": \"calendar_remove\", \"slots\": {\"date\": \"بعض الحاجات\"}}"}
+{"id": "egy-main-massive-7741", "raw": "{\"intent\": \"calendar_query\", \"slots\": {\"date\": \"السبت\"}}"}
+{"id": "egy-main-massive-7843", "raw": "{\"intent\": \"datetime_query\", \"slots\": {\"time\": \"الساعة\", \"date\": \"السبت\"}}"}
+{"id": "egy-main-massive-6902", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"الزيت\"}}"}
+{"id": "egy-main-massive-7461", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"الإعزم\"}}"}
+{"id": "egy-main-massive-7194", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"كره\"}}"}
+{"id": "egy-main-massive-14648", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"الوصفة\"}}"}
+{"id": "egy-main-massive-9961", "raw": "{\"intent\": \"music_query\", \"slots\": {\"music_type\": \"فرن\"}}"}
+{"id": "egy-main-massive-10099", "raw": "{\"intent\": \"cooking_recipe\", \"slots\": {\"food_type\": \"رزبرياني\"}}"}
+{"id": "egy-main-massive-10125", "raw": "{\"intent\": \"music_likeness\", \"slots\": {\"music_type\": \"خبز\", \"music_type2\": \"شواء\"}}"}
+{"id": "egy-main-massive-2309", "raw": "{\"intent\": \"datetime_query\", \"slots\": {\"time\": \"ساعة سبعة الصبح\", \"time_zone\": \"مكة المكرمة\"}}"}
+{"id": "egy-main-massive-3669", "raw": "{\"intent\": \"transport_time\", \"slots\": {\"place_name\": \"مكان معين\"}}"}
+{"id": "egy-main-massive-5497", "raw": "{\"intent\": \"time_zone\", \"slots\": {\"date\": \"الرياض\", \"place_name\": \"جدة\"}}"}
+{"id": "egy-main-massive-5204", "raw": "{\"intent\": \"datetime_convert\", \"slots\": {\"date\": \"الصباح بتوقيت الطايف\", \"time_zone\": \"أبو ظبي\"}}"}
+{"id": "egy-main-massive-2156", "raw": "{\"intent\": \"datetime_query\", \"slots\": {\"time\": \"عاوزأعرف\"}}"}
+{"id": "egy-main-massive-4882", "raw": "{\"intent\": \"datetime_query\", \"slots\": {\"time\": \"الساعة\"}}"}
+{"id": "egy-main-massive-4336", "raw": "{\"intent\": \"datetime_query\", \"slots\": {\"time_zone\": \"السعودية\"}}"}
+{"id": "egy-main-massive-3361", "raw": "{\"intent\": \"datetime_query\", \"slots\": {\"date\": \"الثلاثاء\"}}"}
+{"id": "egy-main-massive-17054", "raw": "{\"intent\": \"email_addcontact\", \"slots\": {\"email_address\": \"باعتى\"}}"}
+{"id": "egy-main-massive-16225", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"افتح جهات الاتصال\"}}"}
+{"id": "egy-main-massive-16693", "raw": "{\"intent\": \"email_addcontact\", \"slots\": {\"email_address\": \"الضيف محل أجهزة لوس\"}}"}
+{"id": "egy-main-massive-16694", "raw": "{\"intent\": \"email_query\", \"slots\": {\"email_address\": \"شركة كيان\", \"email_folder\": \"باعتى\"}}"}
+{"id": "egy-main-massive-17051", "raw": "{\"intent\": \"email_query\", \"slots\": {\"email_address\": \"الإيميل الجديد\"}}"}
+{"id": "egy-main-massive-16052", "raw": "{\"intent\": \"social_post\", \"slots\": {\"media_type\": \"outlook\"}}"}
+{"id": "egy-main-massive-15777", "raw": "{\"intent\": \"email_query\", \"slots\": {\"email_address\": \"لا توجد\"}}"}
+{"id": "egy-main-massive-16749", "raw": "{\"intent\": \"email_addcontact\", \"slots\": {\"email_address\": \"يا اليوم\"}}"}
+{"id": "egy-main-massive-16777", "raw": "{\"intent\": \"email_querycontact\", \"slots\": {\"email_address\": \"ورينى\"}}"}
+{"id": "egy-main-massive-15982", "raw": "{\"intent\": \"email_addcontact\", \"slots\": {\"email_address\": \"اديلى رقم تلفون عبير\"}}"}
+{"id": "egy-main-massive-17111", "raw": "{\"intent\": \"social_query\", \"slots\": {\"person\": \"سليمان\"}}"}
+{"id": "egy-main-massive-17095", "raw": "{\"intent\": \"email_query\", \"slots\": {\"email_address\": \"عفراء\"}}"}
+{"id": "egy-main-massive-16989", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"email_address\": \"لمحمد\", \"message\": \"لوسمحت قول في الايميل اللي بترسله لمحمد أنا عاوز فلوس دلوقتى عشان الموضوع مستعجل\"}}"}
+{"id": "egy-main-massive-16024", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"email_address\": \"وقوله أنا مشغول بكره\"}}"}
+{"id": "egy-main-massive-16701", "raw": "{\"intent\": \"email_addcontact\", \"slots\": {\"email_address\": \"سلافة\"}}"}
+{"id": "egy-main-massive-16131", "raw": "{\"intent\": \"email_query\", \"slots\": {\"email_address\": \"الجهات الإتصال بتاعتى\"}}"}
+{"id": "egy-main-massive-46", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"ازيك أولى\"}}"}
+{"id": "egy-main-massive-1158", "raw": "{\"intent\": \"general_joke\", \"slots\": {\"joke_type\": \"نكتة\"}}"}
+{"id": "egy-main-massive-4216", "raw": "{\"intent\": \"general_joke\", \"slots\": {\"joke_type\": \"نكتة سمعتها\"}}"}
+{"id": "egy-main-massive-527", "raw": "{\"intent\": \"general_joke\", \"slots\": {\"joke_type\": \"عارف\"}}"}
+{"id": "egy-main-massive-1579", "raw": "{\"intent\": \"general_quirky\", \"slots\": {\"definition_word\": \"الكورا\"}}"}
+{"id": "egy-main-massive-7216", "raw": "{\"intent\": \"general_joke\", \"slots\": {\"person\": \"كويس\"}}"}
+{"id": "egy-main-massive-14564", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"language\": \"مصر\"}}"}
+{"id": "egy-main-massive-6646", "raw": "{\"intent\": \"music_query\", \"slots\": {\"media_type\": \"النهاية\"}}"}
+{"id": "egy-main-massive-7168", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"الحفلة السنوية الجاية\", \"item_count\": \"ستة وعشرين\"}}"}
+{"id": "egy-main-massive-27", "raw": "{\"intent\": \"iot_coffee\", \"slots\": {\"device_type\": \"المكان\"}}"}
+{"id": "egy-main-massive-5330", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"device_type\": \"المكنسة الكهربائية الذكية\"}}"}
+{"id": "egy-main-massive-6159", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"نضف الارض\"}}"}
+{"id": "egy-main-massive-290", "raw": "{\"intent\": \"iot_cleaning\", \"slots\": {\"device_type\": \"المكنسة الكهربائية\"}}"}
+{"id": "egy-main-massive-3323", "raw": "{\"intent\": \"iot_coffee\", \"slots\": {\"device_type\": \"براد القهوة\"}}"}
+{"id": "egy-main-massive-6034", "raw": "{\"intent\": \"music_dislikeness\", \"slots\": {\"music_type\": \"قهوة\"}}"}
+{"id": "egy-main-massive-5010", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"المعتاد\"}}"}
+{"id": "egy-main-massive-2753", "raw": "{\"intent\": \"music_dislikeness\", \"slots\": {\"music_type\": \"قهوة\"}}"}
+{"id": "egy-main-massive-1428", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"device_type\": \"المكنسة الكهربائية الذكية\"}}"}
+{"id": "egy-main-massive-2542", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"color_type\": \"حمراء\"}}"}
+{"id": "egy-main-massive-564", "raw": "{\"intent\": \"general_joke\", \"slots\": {\"joke_type\": \"غير لون\"}}"}
+{"id": "egy-main-massive-3543", "raw": "{\"intent\": \"iot_wemo_on\", \"slots\": {\"device_type\": \"ih\"}}"}
+{"id": "egy-main-massive-158", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"device_type\": \"نور\"}}"}
+{"id": "egy-main-massive-702", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"تخفف الإضاءة\"}}"}
+{"id": "egy-main-massive-5201", "raw": "{\"intent\": \"audio_volume_down\", \"slots\": {\"device_type\": \"نواري\"}}"}
+{"id": "egy-main-massive-5047", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"device_type\": \"الإضاءات\"}}"}
+{"id": "egy-main-massive-914", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"طف اللمبات\"}}"}
+{"id": "egy-main-massive-3378", "raw": "{\"intent\": \"cooking_query\", \"slots\": {\"food_type\": \"لمبات\"}}"}
+{"id": "egy-main-massive-1786", "raw": "{\"intent\": \"iot_hue_lightoff\", \"slots\": {\"device_type\": \"غرفة النوم الأساسية\"}}"}
+{"id": "egy-main-massive-369", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"طفي\"}}"}
+{"id": "egy-main-massive-14", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"device_type\": \"الظلام\"}}"}
+{"id": "egy-main-massive-286", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"اللمبات بالمطبخ\"}}"}
+{"id": "egy-main-massive-3522", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"device_type\": \"المبات البلكونة\"}}"}
+{"id": "egy-main-massive-3008", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"تقدر\"}}"}
+{"id": "egy-main-massive-1993", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"device_type\": \"الإضاءة\"}}"}
+{"id": "egy-main-massive-3011", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"device_type\": \"الضوء\"}}"}
+{"id": "egy-main-massive-5014", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"device_type\": \"المكنسة الكهربائية الذكية\"}}"}
+{"id": "egy-main-massive-3298", "raw": "{\"intent\": \"iot_wemo_on\", \"slots\": {\"device_type\": \"طف فيش\"}}"}
+{"id": "egy-main-massive-4154", "raw": "{\"intent\": \"iot_wemo_on\", \"slots\": {\"device_type\": \"wifi\"}}"}
+{"id": "egy-main-massive-3077", "raw": "{\"intent\": \"transport_ticket\", \"slots\": {\"transport_type\": \"طف\", \"place_name\": \"الكشاف\"}}"}
+{"id": "egy-main-massive-4799", "raw": "{\"intent\": \"iot_wemo_on\", \"slots\": {\"device_type\": \"قابس ذكي\"}}"}
+{"id": "egy-main-massive-1551", "raw": "{\"intent\": \"iot_wemo_on\", \"slots\": {\"device_type\": \"wemo\"}}"}
+{"id": "egy-main-massive-4620", "raw": "{\"intent\": \"iot_coffee\", \"slots\": {\"device_type\": \"الفنزوي\"}}"}
+{"id": "egy-main-massive-10915", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"قائمة جديدة\"}}"}
+{"id": "egy-main-massive-10982", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"الشترات\"}}."}
+{"id": "egy-main-massive-10501", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"البقالة\"}}"}
+{"id": "egy-main-massive-10804", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"البقالة\"}}"}
+{"id": "egy-main-massive-11125", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"طلبية\"}}"}
+{"id": "egy-main-massive-10493", "raw": "{\"intent\": \"lists_query\", \"slots\": {\"list_name\": \"المهام\"}}"}
+{"id": "egy-main-massive-10427", "raw": "{\"intent\": \"lists_remove\", \"slots\": {\"list_name\": \"تاعتى\"}}"}
+{"id": "egy-main-massive-10590", "raw": "{\"intent\": \"lists_remove\", \"slots\": {\"list_name\": \"الصف الثاني\"}}"}
+{"id": "egy-main-massive-10756", "raw": "{\"intent\": \"lists_remove\", \"slots\": {\"list_name\": \"قائمة التسوق\"}}"}
+{"id": "egy-main-massive-3029", "raw": "{\"intent\": \"general_joke\", \"slots\": {\"joke_type\": \"الاغنيه\"}}"}
+{"id": "egy-main-massive-2056", "raw": "{\"intent\": \"play_audiobook\", \"slots\": {\"audiobook_name\": \"that song\"}}"}
+{"id": "egy-main-massive-1076", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"متشغلش\"}}"}
+{"id": "egy-main-massive-2780", "raw": "{\"intent\": \"recommendation_events\", \"slots\": {\"event_name\": \"حفلات\"}}"}
+{"id": "egy-main-massive-4985", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"حابب\"}}"}
+{"id": "egy-main-massive-5258", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"ديا\"}}"}
+{"id": "egy-main-massive-4428", "raw": "{\"intent\": \"music_query\", \"slots\": {\"music_type\": \"الأغنية\"}}"}
+{"id": "egy-main-massive-4560", "raw": "{\"intent\": \"music_likeness\", \"slots\": {\"music_type\": \"اغنيه\"}}"}
+{"id": "egy-main-massive-1176", "raw": "{\"intent\": \"music_query\", \"slots\": {\"audiobook_author\": \"الأماكن كلها\", \"audiobook_name\": \"غنية الأماكن كلها\"}}"}
+{"id": "egy-main-massive-1710", "raw": "{\"intent\": \"music_likeness\", \"slots\": {\"music_type\": \"غير روك\"}}"}
+{"id": "egy-main-massive-4268", "raw": "{\"intent\": \"music_query\", \"slots\": {\"music_name\": \"روح\"}}"}
+{"id": "egy-main-massive-5912", "raw": "{\"intent\": \"music_query\", \"slots\": {\"music_type\": \"الاغانى\"}}"}
+{"id": "egy-main-massive-712", "raw": "{\"intent\": \"news_query\", \"slots\": {\"news_topic\": \"الجزيرة\"}}"}
+{"id": "egy-main-massive-1759", "raw": "{\"intent\": \"news_query\", \"slots\": {\"news_topic\": \"بتاعت ولي العهد السعودي\"}}"}
+{"id": "egy-main-massive-3101", "raw": "{\"intent\": \"news_query\", \"slots\": {\"news_topic\": \"الأخير\"}}"}
+{"id": "egy-main-massive-9726", "raw": "{\"intent\": \"play_audiobook\", \"slots\": {\"audiobook_name\": \"now\"}}"}
+{"id": "egy-main-massive-9689", "raw": "{\"intent\": \"play_audiobook\", \"slots\": {\"audiobook_name\": \"الوقف\"}}"}
+{"id": "egy-main-massive-9895", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"device_type\": \"بيت الأرواح\"}}"}
+{"id": "egy-main-massive-10319", "raw": "{\"intent\": \"play_game\", \"slots\": {\"game_name\": \"كوره\"}}"}
+{"id": "egy-main-massive-10256", "raw": "{\"intent\": \"iot_wemo_on\", \"slots\": {\"device_type\": \"ببجي\"}}"}
+{"id": "egy-main-massive-10247", "raw": "{\"intent\": \"play_game\", \"slots\": {\"game_name\": \"العب\"}}"}
+{"id": "egy-main-massive-2560", "raw": "{\"intent\": \"music_query\", \"slots\": {\"media_type\": \"موسيقى\"}}"}
+{"id": "egy-main-massive-4452", "raw": "{\"intent\": \"play_audiobook\", \"slots\": {\"audiobook_name\": \"اغاني\"}}"}
+{"id": "egy-main-massive-1546", "raw": "{\"intent\": \"music_playlist\", \"slots\": {\"playlist_name\": \"summer jams\"}}"}
+{"id": "egy-main-massive-11442", "raw": "{\"intent\": \"play_podcasts\", \"slots\": {\"podcast_name\": \"latest bill simmons podcast\"}}"}
+{"id": "egy-main-massive-11438", "raw": "{\"intent\": \"music_query\", \"slots\": {\"music_genre\": \"حلقة\"}}"}
+{"id": "egy-main-massive-11261", "raw": "{\"intent\": \"music_query\", \"slots\": {\"music_genre\": \"الحلقة الجاية\"}}"}
+{"id": "egy-main-massive-9528", "raw": "{\"intent\": \"play_audiobook\", \"slots\": {\"audiobook_name\": \"n. p. r. and play them out of my speakers\"}}"}
+{"id": "egy-main-massive-9542", "raw": "{\"intent\": \"radio_name\", \"slots\": {\"radio_name\": \"radio\"}}"}
+{"id": "egy-main-massive-9637", "raw": "{\"intent\": \"iot_hue_lighton\", \"slots\": {\"device_type\": \"قوام تعتى\"}}"}
+{"id": "egy-main-massive-14437", "raw": "{\"intent\": \"qa_currency\", \"slots\": {\"currency_name\": \"الريال السعودي\", \"currency_code\": \"SAR\", \"target_currency\": \"الدرهم الإماراتي\"}}"}
+{"id": "egy-main-massive-13738", "raw": "{\"intent\": \"qa_currency\", \"slots\": {\"currency_name\": \"USD\", \"country\": \"United States\", \"country_code\": \"US\", \"country\": \"China\"}}"}
+{"id": "egy-main-massive-15010", "raw": "{\"intent\": \"qa_currency\", \"slots\": {\"currency_name\": \"الدولار\"}}"}
+{"id": "egy-main-massive-14347", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"الفرضية\"}}"}
+{"id": "egy-main-massive-13908", "raw": "{\"intent\": \"qa_definition\", \"slots\": {\"definition_word\": \"ديموقراطية\"}}"}
+{"id": "egy-main-massive-14023", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"جهنم\"}}"}
+{"id": "egy-main-massive-14601", "raw": "{\"intent\": \"qa_currency\", \"slots\": {\"currency_name\": \"العربية\"}}"}
+{"id": "egy-main-massive-14653", "raw": "{\"intent\": \"qa_stock\", \"slots\": {\"country\": \"Russia\"}}"}
+{"id": "egy-main-massive-13798", "raw": "{\"intent\": \"qa_currency\", \"slots\": {\"currency_name\": \"الميل المربع\"}}"}
+{"id": "egy-main-massive-13391", "raw": "{\"intent\": \"qa_currency\", \"slots\": {\"currency_name\": \"البندقية\"}}"}
+{"id": "egy-main-massive-13412", "raw": "{\"intent\": \"qa_currency\", \"slots\": {\"currency_name\": \"يورو\"}}"}
+{"id": "egy-main-massive-13460", "raw": "{\"intent\": \"math_factoid\", \"slots\": {\"number1\": \"18\", \"number2\": \"1\", \"number3\": \"32\"}}"}
+{"id": "egy-main-massive-13934", "raw": "{\"intent\": \"qa_currency\", \"slots\": {\"currency_name\": \"الدولار\"}}"}
+{"id": "egy-main-massive-14925", "raw": "{\"intent\": \"qa_currency\", \"slots\": {\"currency_name\": \"سهم المراعي\"}}"}
+{"id": "egy-main-massive-14189", "raw": "{\"intent\": \"qa_currency\", \"slots\": {\"currency_name\": \"ستارباكس\"}}"}
+{"id": "egy-main-massive-11598", "raw": "{\"intent\": \"recommendation_events\", \"slots\": {\"event_name\": \"فعاليات سباق الخيل\"}}."}
+{"id": "egy-main-massive-12054", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"date\": \"البحر\"}}"}
+{"id": "egy-main-massive-11875", "raw": "{\"intent\": \"lists_query\", \"slots\": {\"list_name\": \"المهرجان أكل\"}}"}
+{"id": "egy-main-massive-11954", "raw": "{\"intent\": \"lists_query\", \"slots\": {\"list_name\": \"المسرح\"}}"}
+{"id": "egy-main-massive-11922", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"مطاعم محلية\"}}"}
+{"id": "egy-main-massive-11706", "raw": "{\"intent\": \"lists_query\", \"slots\": {\"list_name\": \"المحلات\"}}."}
+{"id": "egy-main-massive-11871", "raw": "{\"intent\": \"movie_name\", \"slots\": {\"movie_name\": \"فيلم بيتعرض في المنطقة بتاعتى\"}}"}
+{"id": "egy-main-massive-11920", "raw": "{\"intent\": \"music_query\", \"slots\": {\"movie_name\": \"ال-week\"}}"}
+{"id": "egy-main-massive-6376", "raw": "{\"intent\": \"movie_name\", \"slots\": {\"movie_type\": \"مصرى\", \"year\": \"الستاشر\"}}"}
+{"id": "egy-main-massive-15166", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"شغلي\"}}"}
+{"id": "egy-main-massive-15454", "raw": "{\"intent\": \"email_query\", \"slots\": {\"email_address\": \"شركة خطوط طيران الإمارات\", \"email_folder\": \"الخطوط\"}}"}
+{"id": "egy-main-massive-15731", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"email_address\": \"olly\", \"email_folder\": \"موبايلي\"}}"}
+{"id": "egy-main-massive-15345", "raw": "{\"intent\": \"news_query\", \"slots\": {\"news_topic\": \"المواضيع\"}}"}
+{"id": "egy-main-massive-15511", "raw": "{\"intent\": \"social_post\", \"slots\": {\"message\": \"وريلى اخر نشاط ليا على وسائل التواصل الاجتماعى\"}}"}
+{"id": "egy-main-massive-15205", "raw": "{\"intent\": \"news_query\", \"slots\": {\"news_topic\": \"فيسبوك\"}}"}
+{"id": "egy-main-massive-5488", "raw": "{\"intent\": \"takeaway_order\", \"slots\": {\"order_type\": \"بيتزا\"}}"}
+{"id": "egy-main-massive-1516", "raw": "{\"intent\": \"food_type\", \"slots\": {\"food_type\": \"بيتزا\"}}"}
+{"id": "egy-main-massive-1043", "raw": "{\"intent\": \"transport_query\", \"slots\": {\"transport_agency\": \"مندي\", \"transport_name\": \"المطعم\"}}"}
+{"id": "egy-main-massive-2908", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"ريدان\"}}"}
+{"id": "egy-main-massive-3021", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"جان\"}}"}
+{"id": "egy-main-massive-168", "raw": "{\"intent\": \"lists_query\", \"slots\": {\"list_name\": \"وجبات جاهزة\"}}"}
+{"id": "egy-main-massive-12437", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"مسرح\"}}"}
+{"id": "egy-main-massive-12707", "raw": "{\"intent\": \"transport_query\", \"slots\": {\"transport_type\": \"واصلات\"}}"}
+{"id": "egy-main-massive-12189", "raw": "{\"intent\": \"transport_query\", \"slots\": {\"transport_name\": \"محطة القطار\"}}"}
+{"id": "egy-main-massive-12159", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"person\": \"اوبر\"}}"}
+{"id": "egy-main-massive-12548", "raw": "{\"intent\": \"lists_remove\", \"slots\": {\"list_name\": \"البيت\"}}"}
+{"id": "egy-main-massive-12779", "raw": "{\"intent\": \"transport_ticket\", \"slots\": {\"transport_type\": \"Uber\", \"transport_name\": \"أقرب\"}}"}
+{"id": "egy-main-massive-12150", "raw": "{\"intent\": \"transport_name\", \"slots\": {\"transport_name\": \"الرياض قطار الشرقية الويكند\"}}"}
+{"id": "egy-main-massive-12846", "raw": "{\"intent\": \"transport_ticket\", \"slots\": {\"transport_type\": \"قطار\", \"transport_name\": \"جدة\", \"transport_descriptor\": \"بكرة الصبح\"}}"}
+{"id": "egy-main-massive-12469", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"اسكندريه بالقطر\"}}"}
+{"id": "egy-main-massive-12869", "raw": "{\"intent\": \"transport_query\", \"slots\": {\"transport_type\": \"المواصلات\", \"place_name\": \"الشكل\"}}"}
+{"id": "egy-main-massive-12693", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"حقي عادي\"}}"}
+{"id": "egy-main-massive-12256", "raw": "{\"intent\": \"general_greet\", \"slots\": {\"place_name\": \"الرياض\"}}"}
+{"id": "egy-main-massive-5468", "raw": "{\"intent\": \"general_quirky\", \"slots\": {\"question\": \"هل لازم أخد نظارات شمسية؟\"}}"}
+{"id": "egy-main-massive-6024", "raw": "{\"intent\": \"transport_ticket\", \"slots\": {\"transport_type\": \"سترة بطاقيه\", \"place_name\": \" jacket النهارده\"}}"}
+{"id": "egy-main-massive-3936", "raw": "{\"intent\": \"temperature_query\", \"slots\": {\"temperature\": \"درجة حرارة\"}}"}

@@ -1,0 +1,13 @@
+{
+  "n": 200,
+  "json_valid": 1.0,
+  "intent_acc": 0.775,
+  "slot_precision": 0.6646341463414634,
+  "slot_recall": 0.6337209302325582,
+  "slot_f1": 0.6488095238095237,
+  "exact_match": 0.575,
+  "exact_match_ci95": [
+    0.51,
+    0.64
+  ]
+}

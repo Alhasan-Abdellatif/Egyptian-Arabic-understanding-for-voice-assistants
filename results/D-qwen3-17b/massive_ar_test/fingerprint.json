@@ -1,0 +1,19 @@
+{
+  "backend": "hf",
+  "model": "Qwen/Qwen3-1.7B",
+  "adapter": "adapters/D-qwen3-17b",
+  "prompt": "sft",
+  "shots": 0,
+  "weights": [
+    [
+      "adapter_model.safetensors",
+      69782384,
+      1789593422
+    ],
+    [
+      "training_args.bin",
+      5713,
+      1789593422
+    ]
+  ]
+}

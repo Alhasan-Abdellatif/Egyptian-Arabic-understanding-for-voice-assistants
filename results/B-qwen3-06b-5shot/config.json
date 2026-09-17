@@ -1,0 +1,17 @@
+{
+  "backend": "mlx",
+  "model": "Qwen/Qwen3-0.6B",
+  "run_name": "B-qwen3-06b-5shot",
+  "eval_set": [
+    "data/processed/egy_test.jsonl",
+    "data/processed/massive_ar_test.jsonl"
+  ],
+  "limit": 1000,
+  "shots": 5,
+  "shots_from": "data/processed/massive_ar_train.jsonl",
+  "prompt": "full",
+  "adapter": null,
+  "effort": "low",
+  "workers": 8,
+  "chunk": 32
+}

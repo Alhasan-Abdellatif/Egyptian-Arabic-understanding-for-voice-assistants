@@ -1,0 +1,17 @@
+{
+  "backend": "encoder",
+  "model": "models/E-D-camelbert-da",
+  "run_name": "E-D-camelbert-da",
+  "eval_set": [
+    "data/processed/egy_test.jsonl",
+    "data/processed/massive_ar_test.jsonl"
+  ],
+  "limit": 1000,
+  "shots": 0,
+  "shots_from": "data/processed/massive_ar_train.jsonl",
+  "prompt": "full",
+  "adapter": null,
+  "effort": "low",
+  "workers": 8,
+  "chunk": 32
+}

@@ -1,0 +1,200 @@
+{"id": "egy-main-massive-3161", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "general_joke", "pred_pairs": [["person", "يُستقبل"]]}
+{"id": "egy-main-massive-4851", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["general_frequency", "منبه"]]}
+{"id": "egy-main-massive-63", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "منبهاتى"]]}
+{"id": "egy-main-massive-4673", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "iot_hue_lighton", "pred_pairs": [["device_type", "المنبهات"]]}
+{"id": "egy-main-massive-4712", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "lists_remove", "pred_pairs": [["list_name", "متصحينيش بكره"]]}
+{"id": "egy-main-massive-6162", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "امسح"]]}
+{"id": "egy-main-massive-399", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "شيل"]]}
+{"id": "egy-main-massive-4921", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["general_frequency", "منبه"]]}
+{"id": "egy-main-massive-5082", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_greet", "pred_pairs": [["time", "ستة الصبح"]]}
+{"id": "egy-main-massive-533", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_greet", "pred_pairs": [["time_of_day", "بليل"]]}
+{"id": "egy-main-massive-174", "valid": 1, "intent_ok": 0, "em": 0, "tp": 1, "fp": 2, "fn": 1, "pred_intent": "general_greet", "pred_pairs": [["person", "يصحيني"], ["time", "سبعة الصبح"], ["date", "يوم الخميس"]]}
+{"id": "egy-main-massive-4081", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 3, "fn": 2, "pred_intent": "takeaway_order", "pred_pairs": [["order_type", "الكلّام"], ["place_name", "البيت"], ["item", "الكلّام"]]}
+{"id": "egy-main-massive-1639", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "iot_hue_lighton", "pred_pairs": [["device_type", "الطى الصوت"]]}
+{"id": "egy-main-massive-1352", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "iot_hue_lighton", "pred_pairs": [["device_type", "سماعه"]]}
+{"id": "egy-main-massive-3474", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "music_dislikeness", "pred_pairs": [["music_descriptor", "صوت الموسيقى"]]}
+{"id": "egy-main-massive-5611", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "وطى صوت"]]}
+{"id": "egy-main-massive-5550", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "عاوز"]]}
+{"id": "egy-main-massive-2205", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "audio_volume_down", "pred_pairs": [["change_amount", "2"]]}
+{"id": "egy-main-massive-3837", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "audio_volume_mute", "pred_pairs": [["device_type", "الموسيقى"]]}
+{"id": "egy-main-massive-2796", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "music_dislikeness", "pred_pairs": [["music_type", "سماعات"]]}
+{"id": "egy-main-massive-1065", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "audio_volume_up", "pred_pairs": [["device_type", "الصوت"]]}
+{"id": "egy-main-massive-5812", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "audio_volume_mute", "pred_pairs": [["device_type", "الافتراضي"]]}
+{"id": "egy-main-massive-4155", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "music_dislikeness", "pred_pairs": [["change_amount", "5 وثلاثين"]]}
+{"id": "egy-main-massive-5579", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "audio_volume_mute", "pred_pairs": [["device_type", "الصوت"]]}
+{"id": "egy-main-massive-1374", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "صوتك"]]}
+{"id": "egy-main-massive-3590", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "اتكلم بصوت عالي"]]}
+{"id": "egy-main-massive-1630", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "music_query", "pred_pairs": [["media_type", "موسيقى"]]}
+{"id": "egy-main-massive-261", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "مش سامعك"]]}
+{"id": "egy-main-massive-8404", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "كنت أعرف اكتر عن الحادث ده"]]}
+{"id": "egy-main-massive-8029", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "recommendation_events", "pred_pairs": [["event_name", "الحدث الجايه النهار"]]}
+{"id": "egy-main-massive-9035", "valid": 1, "intent_ok": 0, "em": 0, "tp": 1, "fp": 0, "fn": 1, "pred_intent": "general_joke", "pred_pairs": [["person", "أحمد"]]}
+{"id": "egy-main-massive-9103", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "social_post", "pred_pairs": [["event_name", "اجتماع النهارده بليل"]]}
+{"id": "egy-main-massive-6726", "valid": 1, "intent_ok": 0, "em": 0, "tp": 1, "fp": 0, "fn": 0, "pred_intent": "social_post", "pred_pairs": [["event_name", "اجتماع"]]}
+{"id": "egy-main-massive-7289", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "recommendation_events", "pred_pairs": [["event_name", "جابر"]]}
+{"id": "egy-main-massive-7080", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "calendar_remove", "pred_pairs": [["date", "بعض الحاجات"]]}
+{"id": "egy-main-massive-7741", "valid": 1, "intent_ok": 0, "em": 0, "tp": 1, "fp": 0, "fn": 0, "pred_intent": "calendar_query", "pred_pairs": [["date", "السبت"]]}
+{"id": "egy-main-massive-7843", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 2, "fn": 4, "pred_intent": "datetime_query", "pred_pairs": [["time", "الساعة"], ["date", "السبت"]]}
+{"id": "egy-main-massive-6902", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "general_greet", "pred_pairs": [["person", "الزيت"]]}
+{"id": "egy-main-massive-7461", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "الإعزم"]]}
+{"id": "egy-main-massive-7194", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "general_greet", "pred_pairs": [["person", "كره"]]}
+{"id": "egy-main-massive-14648", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "الوصفة"]]}
+{"id": "egy-main-massive-9961", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "music_query", "pred_pairs": [["music_type", "فرن"]]}
+{"id": "egy-main-massive-10099", "valid": 1, "intent_ok": 1, "em": 1, "tp": 1, "fp": 0, "fn": 0, "pred_intent": "cooking_recipe", "pred_pairs": [["food_type", "رزبرياني"]]}
+{"id": "egy-main-massive-10125", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 2, "fn": 0, "pred_intent": "music_likeness", "pred_pairs": [["music_type", "خبز"], ["music_type2", "شواء"]]}
+{"id": "egy-main-massive-2309", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 2, "fn": 2, "pred_intent": "datetime_query", "pred_pairs": [["time", "ساعة سبعة الصبح"], ["time_zone", "مكة المكرمة"]]}
+{"id": "egy-main-massive-3669", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "transport_time", "pred_pairs": [["place_name", "مكان معين"]]}
+{"id": "egy-main-massive-5497", "valid": 1, "intent_ok": 0, "em": 0, "tp": 1, "fp": 1, "fn": 1, "pred_intent": "time_zone", "pred_pairs": [["date", "الرياض"], ["place_name", "جدة"]]}
+{"id": "egy-main-massive-5204", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 2, "fn": 3, "pred_intent": "datetime_convert", "pred_pairs": [["date", "الصباح بتوقيت الطايف"], ["time_zone", "أبو ظبي"]]}
+{"id": "egy-main-massive-2156", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "datetime_query", "pred_pairs": [["time", "عاوزأعرف"]]}
+{"id": "egy-main-massive-4882", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "datetime_query", "pred_pairs": [["time", "الساعة"]]}
+{"id": "egy-main-massive-4336", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "datetime_query", "pred_pairs": [["time_zone", "السعودية"]]}
+{"id": "egy-main-massive-3361", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "datetime_query", "pred_pairs": [["date", "الثلاثاء"]]}
+{"id": "egy-main-massive-17054", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "email_addcontact", "pred_pairs": [["email_address", "باعتى"]]}
+{"id": "egy-main-massive-16225", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "افتح جهات الاتصال"]]}
+{"id": "egy-main-massive-16693", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "email_addcontact", "pred_pairs": [["email_address", "الضيف محل أجهزة لوس"]]}
+{"id": "egy-main-massive-16694", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 2, "fn": 2, "pred_intent": "email_query", "pred_pairs": [["email_address", "شركة كيان"], ["email_folder", "باعتى"]]}
+{"id": "egy-main-massive-17051", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "email_query", "pred_pairs": [["email_address", "الإيميل الجديد"]]}
+{"id": "egy-main-massive-16052", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "social_post", "pred_pairs": [["media_type", "outlook"]]}
+{"id": "egy-main-massive-15777", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "email_query", "pred_pairs": [["email_address", "لا توجد"]]}
+{"id": "egy-main-massive-16749", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "email_addcontact", "pred_pairs": [["email_address", "يا اليوم"]]}
+{"id": "egy-main-massive-16777", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "email_querycontact", "pred_pairs": [["email_address", "ورينى"]]}
+{"id": "egy-main-massive-15982", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "email_addcontact", "pred_pairs": [["email_address", "اديلى رقم تلفون عبير"]]}
+{"id": "egy-main-massive-17111", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "social_query", "pred_pairs": [["person", "سليمان"]]}
+{"id": "egy-main-massive-17095", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "email_query", "pred_pairs": [["email_address", "عفراء"]]}
+{"id": "egy-main-massive-16989", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 2, "fn": 1, "pred_intent": "email_sendemail", "pred_pairs": [["email_address", "لمحمد"], ["message", "لوسمحت قول في الايميل اللي بترسله لمحمد أنا عاوز فلوس دلوقتى عشان الموضوع مستعجل"]]}
+{"id": "egy-main-massive-16024", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "email_sendemail", "pred_pairs": [["email_address", "وقوله أنا مشغول بكره"]]}
+{"id": "egy-main-massive-16701", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "email_addcontact", "pred_pairs": [["email_address", "سلافة"]]}
+{"id": "egy-main-massive-16131", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "email_query", "pred_pairs": [["email_address", "الجهات الإتصال بتاعتى"]]}
+{"id": "egy-main-massive-46", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "ازيك أولى"]]}
+{"id": "egy-main-massive-1158", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_joke", "pred_pairs": [["joke_type", "نكتة"]]}
+{"id": "egy-main-massive-4216", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_joke", "pred_pairs": [["joke_type", "نكتة سمعتها"]]}
+{"id": "egy-main-massive-527", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_joke", "pred_pairs": [["joke_type", "عارف"]]}
+{"id": "egy-main-massive-1579", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_quirky", "pred_pairs": [["definition_word", "الكورا"]]}
+{"id": "egy-main-massive-7216", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_joke", "pred_pairs": [["person", "كويس"]]}
+{"id": "egy-main-massive-14564", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_greet", "pred_pairs": [["language", "مصر"]]}
+{"id": "egy-main-massive-6646", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "music_query", "pred_pairs": [["media_type", "النهاية"]]}
+{"id": "egy-main-massive-7168", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 2, "fn": 3, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "الحفلة السنوية الجاية"], ["item_count", "ستة وعشرين"]]}
+{"id": "egy-main-massive-27", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "iot_coffee", "pred_pairs": [["device_type", "المكان"]]}
+{"id": "egy-main-massive-5330", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "iot_hue_lighton", "pred_pairs": [["device_type", "المكنسة الكهربائية الذكية"]]}
+{"id": "egy-main-massive-6159", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_greet", "pred_pairs": [["person", "نضف الارض"]]}
+{"id": "egy-main-massive-290", "valid": 1, "intent_ok": 1, "em": 1, "tp": 1, "fp": 0, "fn": 0, "pred_intent": "iot_cleaning", "pred_pairs": [["device_type", "المكنسة الكهربائية"]]}
+{"id": "egy-main-massive-3323", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "iot_coffee", "pred_pairs": [["device_type", "براد القهوة"]]}
+{"id": "egy-main-massive-6034", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "music_dislikeness", "pred_pairs": [["music_type", "قهوة"]]}
+{"id": "egy-main-massive-5010", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_greet", "pred_pairs": [["person", "المعتاد"]]}
+{"id": "egy-main-massive-2753", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "music_dislikeness", "pred_pairs": [["music_type", "قهوة"]]}
+{"id": "egy-main-massive-1428", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "iot_hue_lighton", "pred_pairs": [["device_type", "المكنسة الكهربائية الذكية"]]}
+{"id": "egy-main-massive-2542", "valid": 1, "intent_ok": 0, "em": 0, "tp": 1, "fp": 0, "fn": 3, "pred_intent": "iot_hue_lighton", "pred_pairs": [["color_type", "حمراء"]]}
+{"id": "egy-main-massive-564", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_joke", "pred_pairs": [["joke_type", "غير لون"]]}
+{"id": "egy-main-massive-3543", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "iot_wemo_on", "pred_pairs": [["device_type", "ih"]]}
+{"id": "egy-main-massive-158", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "iot_hue_lighton", "pred_pairs": [["device_type", "نور"]]}
+{"id": "egy-main-massive-702", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "تخفف الإضاءة"]]}
+{"id": "egy-main-massive-5201", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "audio_volume_down", "pred_pairs": [["device_type", "نواري"]]}
+{"id": "egy-main-massive-5047", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "iot_hue_lighton", "pred_pairs": [["device_type", "الإضاءات"]]}
+{"id": "egy-main-massive-914", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "طف اللمبات"]]}
+{"id": "egy-main-massive-3378", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "cooking_query", "pred_pairs": [["food_type", "لمبات"]]}
+{"id": "egy-main-massive-1786", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "iot_hue_lightoff", "pred_pairs": [["device_type", "غرفة النوم الأساسية"]]}
+{"id": "egy-main-massive-369", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "طفي"]]}
+{"id": "egy-main-massive-14", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "iot_hue_lighton", "pred_pairs": [["device_type", "الظلام"]]}
+{"id": "egy-main-massive-286", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "اللمبات بالمطبخ"]]}
+{"id": "egy-main-massive-3522", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "iot_hue_lighton", "pred_pairs": [["device_type", "المبات البلكونة"]]}
+{"id": "egy-main-massive-3008", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "تقدر"]]}
+{"id": "egy-main-massive-1993", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "iot_hue_lighton", "pred_pairs": [["device_type", "الإضاءة"]]}
+{"id": "egy-main-massive-3011", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "iot_hue_lighton", "pred_pairs": [["device_type", "الضوء"]]}
+{"id": "egy-main-massive-5014", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "iot_hue_lighton", "pred_pairs": [["device_type", "المكنسة الكهربائية الذكية"]]}
+{"id": "egy-main-massive-3298", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "iot_wemo_on", "pred_pairs": [["device_type", "طف فيش"]]}
+{"id": "egy-main-massive-4154", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "iot_wemo_on", "pred_pairs": [["device_type", "wifi"]]}
+{"id": "egy-main-massive-3077", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 2, "fn": 0, "pred_intent": "transport_ticket", "pred_pairs": [["transport_type", "طف"], ["place_name", "الكشاف"]]}
+{"id": "egy-main-massive-4799", "valid": 1, "intent_ok": 1, "em": 1, "tp": 1, "fp": 0, "fn": 0, "pred_intent": "iot_wemo_on", "pred_pairs": [["device_type", "قابس ذكي"]]}
+{"id": "egy-main-massive-1551", "valid": 1, "intent_ok": 1, "em": 1, "tp": 1, "fp": 0, "fn": 0, "pred_intent": "iot_wemo_on", "pred_pairs": [["device_type", "wemo"]]}
+{"id": "egy-main-massive-4620", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "iot_coffee", "pred_pairs": [["device_type", "الفنزوي"]]}
+{"id": "egy-main-massive-10915", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "قائمة جديدة"]]}
+{"id": "egy-main-massive-10982", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "الشترات"]]}
+{"id": "egy-main-massive-10501", "valid": 1, "intent_ok": 1, "em": 1, "tp": 1, "fp": 0, "fn": 0, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "البقالة"]]}
+{"id": "egy-main-massive-10804", "valid": 1, "intent_ok": 0, "em": 0, "tp": 1, "fp": 0, "fn": 0, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "البقالة"]]}
+{"id": "egy-main-massive-11125", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "طلبية"]]}
+{"id": "egy-main-massive-10493", "valid": 1, "intent_ok": 1, "em": 1, "tp": 1, "fp": 0, "fn": 0, "pred_intent": "lists_query", "pred_pairs": [["list_name", "المهام"]]}
+{"id": "egy-main-massive-10427", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "lists_remove", "pred_pairs": [["list_name", "تاعتى"]]}
+{"id": "egy-main-massive-10590", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "lists_remove", "pred_pairs": [["list_name", "الصف الثاني"]]}
+{"id": "egy-main-massive-10756", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "lists_remove", "pred_pairs": [["list_name", "قائمة التسوق"]]}
+{"id": "egy-main-massive-3029", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_joke", "pred_pairs": [["joke_type", "الاغنيه"]]}
+{"id": "egy-main-massive-2056", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "play_audiobook", "pred_pairs": [["audiobook_name", "that song"]]}
+{"id": "egy-main-massive-1076", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_greet", "pred_pairs": [["person", "متشغلش"]]}
+{"id": "egy-main-massive-2780", "valid": 1, "intent_ok": 0, "em": 0, "tp": 1, "fp": 0, "fn": 0, "pred_intent": "recommendation_events", "pred_pairs": [["event_name", "حفلات"]]}
+{"id": "egy-main-massive-4985", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "general_greet", "pred_pairs": [["person", "حابب"]]}
+{"id": "egy-main-massive-5258", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "ديا"]]}
+{"id": "egy-main-massive-4428", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "music_query", "pred_pairs": [["music_type", "الأغنية"]]}
+{"id": "egy-main-massive-4560", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "music_likeness", "pred_pairs": [["music_type", "اغنيه"]]}
+{"id": "egy-main-massive-1176", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 2, "fn": 1, "pred_intent": "music_query", "pred_pairs": [["audiobook_author", "الأماكن كلها"], ["audiobook_name", "غنية الأماكن كلها"]]}
+{"id": "egy-main-massive-1710", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "music_likeness", "pred_pairs": [["music_type", "غير روك"]]}
+{"id": "egy-main-massive-4268", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "music_query", "pred_pairs": [["music_name", "روح"]]}
+{"id": "egy-main-massive-5912", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "music_query", "pred_pairs": [["music_type", "الاغانى"]]}
+{"id": "egy-main-massive-712", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "news_query", "pred_pairs": [["news_topic", "الجزيرة"]]}
+{"id": "egy-main-massive-1759", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "news_query", "pred_pairs": [["news_topic", "بتاعت ولي العهد السعودي"]]}
+{"id": "egy-main-massive-3101", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "news_query", "pred_pairs": [["news_topic", "الأخير"]]}
+{"id": "egy-main-massive-9726", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "play_audiobook", "pred_pairs": [["audiobook_name", "now"]]}
+{"id": "egy-main-massive-9689", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "play_audiobook", "pred_pairs": [["audiobook_name", "الوقف"]]}
+{"id": "egy-main-massive-9895", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "iot_hue_lighton", "pred_pairs": [["device_type", "بيت الأرواح"]]}
+{"id": "egy-main-massive-10319", "valid": 1, "intent_ok": 1, "em": 1, "tp": 1, "fp": 0, "fn": 0, "pred_intent": "play_game", "pred_pairs": [["game_name", "كوره"]]}
+{"id": "egy-main-massive-10256", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "iot_wemo_on", "pred_pairs": [["device_type", "ببجي"]]}
+{"id": "egy-main-massive-10247", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "play_game", "pred_pairs": [["game_name", "العب"]]}
+{"id": "egy-main-massive-2560", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "music_query", "pred_pairs": [["media_type", "موسيقى"]]}
+{"id": "egy-main-massive-4452", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "play_audiobook", "pred_pairs": [["audiobook_name", "اغاني"]]}
+{"id": "egy-main-massive-1546", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "music_playlist", "pred_pairs": [["playlist_name", "summer jams"]]}
+{"id": "egy-main-massive-11442", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "play_podcasts", "pred_pairs": [["podcast_name", "latest bill simmons podcast"]]}
+{"id": "egy-main-massive-11438", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "music_query", "pred_pairs": [["music_genre", "حلقة"]]}
+{"id": "egy-main-massive-11261", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "music_query", "pred_pairs": [["music_genre", "الحلقة الجاية"]]}
+{"id": "egy-main-massive-9528", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "play_audiobook", "pred_pairs": [["audiobook_name", "n. p. r. and play them out of my speakers"]]}
+{"id": "egy-main-massive-9542", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "radio_name", "pred_pairs": [["radio_name", "radio"]]}
+{"id": "egy-main-massive-9637", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "iot_hue_lighton", "pred_pairs": [["device_type", "قوام تعتى"]]}
+{"id": "egy-main-massive-14437", "valid": 1, "intent_ok": 1, "em": 0, "tp": 1, "fp": 2, "fn": 1, "pred_intent": "qa_currency", "pred_pairs": [["currency_name", "الريال السعودي"], ["currency_code", "SAR"], ["target_currency", "الدرهم الإماراتي"]]}
+{"id": "egy-main-massive-13738", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 3, "fn": 2, "pred_intent": "qa_currency", "pred_pairs": [["currency_name", "USD"], ["country", "China"], ["country_code", "US"]]}
+{"id": "egy-main-massive-15010", "valid": 1, "intent_ok": 1, "em": 0, "tp": 1, "fp": 0, "fn": 1, "pred_intent": "qa_currency", "pred_pairs": [["currency_name", "الدولار"]]}
+{"id": "egy-main-massive-14347", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_greet", "pred_pairs": [["person", "الفرضية"]]}
+{"id": "egy-main-massive-13908", "valid": 1, "intent_ok": 1, "em": 1, "tp": 1, "fp": 0, "fn": 0, "pred_intent": "qa_definition", "pred_pairs": [["definition_word", "ديموقراطية"]]}
+{"id": "egy-main-massive-14023", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "جهنم"]]}
+{"id": "egy-main-massive-14601", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "qa_currency", "pred_pairs": [["currency_name", "العربية"]]}
+{"id": "egy-main-massive-14653", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "qa_stock", "pred_pairs": [["country", "Russia"]]}
+{"id": "egy-main-massive-13798", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "qa_currency", "pred_pairs": [["currency_name", "الميل المربع"]]}
+{"id": "egy-main-massive-13391", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "qa_currency", "pred_pairs": [["currency_name", "البندقية"]]}
+{"id": "egy-main-massive-13412", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "qa_currency", "pred_pairs": [["currency_name", "يورو"]]}
+{"id": "egy-main-massive-13460", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 3, "fn": 0, "pred_intent": "math_factoid", "pred_pairs": [["number1", "18"], ["number2", "1"], ["number3", "32"]]}
+{"id": "egy-main-massive-13934", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "qa_currency", "pred_pairs": [["currency_name", "الدولار"]]}
+{"id": "egy-main-massive-14925", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "qa_currency", "pred_pairs": [["currency_name", "سهم المراعي"]]}
+{"id": "egy-main-massive-14189", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "qa_currency", "pred_pairs": [["currency_name", "ستارباكس"]]}
+{"id": "egy-main-massive-11598", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "recommendation_events", "pred_pairs": [["event_name", "فعاليات سباق الخيل"]]}
+{"id": "egy-main-massive-12054", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "weather_query", "pred_pairs": [["date", "البحر"]]}
+{"id": "egy-main-massive-11875", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "lists_query", "pred_pairs": [["list_name", "المهرجان أكل"]]}
+{"id": "egy-main-massive-11954", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "lists_query", "pred_pairs": [["list_name", "المسرح"]]}
+{"id": "egy-main-massive-11922", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "مطاعم محلية"]]}
+{"id": "egy-main-massive-11706", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "lists_query", "pred_pairs": [["list_name", "المحلات"]]}
+{"id": "egy-main-massive-11871", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "movie_name", "pred_pairs": [["movie_name", "فيلم بيتعرض في المنطقة بتاعتى"]]}
+{"id": "egy-main-massive-11920", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "music_query", "pred_pairs": [["movie_name", "ال-week"]]}
+{"id": "egy-main-massive-6376", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 2, "fn": 1, "pred_intent": "movie_name", "pred_pairs": [["movie_type", "مصرى"], ["year", "الستاشر"]]}
+{"id": "egy-main-massive-15166", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_greet", "pred_pairs": [["person", "شغلي"]]}
+{"id": "egy-main-massive-15454", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 2, "fn": 2, "pred_intent": "email_query", "pred_pairs": [["email_address", "شركة خطوط طيران الإمارات"], ["email_folder", "الخطوط"]]}
+{"id": "egy-main-massive-15731", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 2, "fn": 2, "pred_intent": "email_sendemail", "pred_pairs": [["email_address", "olly"], ["email_folder", "موبايلي"]]}
+{"id": "egy-main-massive-15345", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "news_query", "pred_pairs": [["news_topic", "المواضيع"]]}
+{"id": "egy-main-massive-15511", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "social_post", "pred_pairs": [["message", "وريلى اخر نشاط ليا على وسائل التواصل الاجتماعى"]]}
+{"id": "egy-main-massive-15205", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "news_query", "pred_pairs": [["news_topic", "فيسبوك"]]}
+{"id": "egy-main-massive-5488", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "takeaway_order", "pred_pairs": [["order_type", "بيتزا"]]}
+{"id": "egy-main-massive-1516", "valid": 1, "intent_ok": 0, "em": 0, "tp": 1, "fp": 0, "fn": 2, "pred_intent": "food_type", "pred_pairs": [["food_type", "بيتزا"]]}
+{"id": "egy-main-massive-1043", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 2, "fn": 3, "pred_intent": "transport_query", "pred_pairs": [["transport_agency", "مندي"], ["transport_name", "المطعم"]]}
+{"id": "egy-main-massive-2908", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_greet", "pred_pairs": [["person", "ريدان"]]}
+{"id": "egy-main-massive-3021", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_greet", "pred_pairs": [["person", "جان"]]}
+{"id": "egy-main-massive-168", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "lists_query", "pred_pairs": [["list_name", "وجبات جاهزة"]]}
+{"id": "egy-main-massive-12437", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "مسرح"]]}
+{"id": "egy-main-massive-12707", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "transport_query", "pred_pairs": [["transport_type", "واصلات"]]}
+{"id": "egy-main-massive-12189", "valid": 1, "intent_ok": 1, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "transport_query", "pred_pairs": [["transport_name", "محطة القطار"]]}
+{"id": "egy-main-massive-12159", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_greet", "pred_pairs": [["person", "اوبر"]]}
+{"id": "egy-main-massive-12548", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "lists_remove", "pred_pairs": [["list_name", "البيت"]]}
+{"id": "egy-main-massive-12779", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 2, "fn": 1, "pred_intent": "transport_ticket", "pred_pairs": [["transport_type", "Uber"], ["transport_name", "أقرب"]]}
+{"id": "egy-main-massive-12150", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 3, "pred_intent": "transport_name", "pred_pairs": [["transport_name", "الرياض قطار الشرقية الويكند"]]}
+{"id": "egy-main-massive-12846", "valid": 1, "intent_ok": 1, "em": 0, "tp": 1, "fp": 2, "fn": 3, "pred_intent": "transport_ticket", "pred_pairs": [["transport_type", "قطار"], ["transport_name", "جدة"], ["transport_descriptor", "بكرة الصبح"]]}
+{"id": "egy-main-massive-12469", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 2, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "اسكندريه بالقطر"]]}
+{"id": "egy-main-massive-12869", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 2, "fn": 0, "pred_intent": "transport_query", "pred_pairs": [["transport_type", "المواصلات"], ["place_name", "الشكل"]]}
+{"id": "egy-main-massive-12693", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 0, "pred_intent": "lists_createoradd", "pred_pairs": [["list_name", "حقي عادي"]]}
+{"id": "egy-main-massive-12256", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_greet", "pred_pairs": [["place_name", "الرياض"]]}
+{"id": "egy-main-massive-5468", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "general_quirky", "pred_pairs": [["question", "هل لازم أخد نظارات شمسية؟"]]}
+{"id": "egy-main-massive-6024", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 2, "fn": 3, "pred_intent": "transport_ticket", "pred_pairs": [["transport_type", "سترة بطاقيه"], ["place_name", " jacket النهارده"]]}
+{"id": "egy-main-massive-3936", "valid": 1, "intent_ok": 0, "em": 0, "tp": 0, "fp": 1, "fn": 1, "pred_intent": "temperature_query", "pred_pairs": [["temperature", "درجة حرارة"]]}
