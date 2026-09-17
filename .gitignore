@@ -21,3 +21,6 @@ batch_results_*.jsonl
 
 # raw session log - saved for reference, not part of the public repo
 docs/conversation_history.md
+
+# personal / maintainer notes, kept out of the public repo
+local/cv_bullets.md

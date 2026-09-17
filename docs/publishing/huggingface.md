@@ -27,7 +27,7 @@ mkdir -p local/hf-dataset && cp \
     data/processed/egy_synth_dev.jsonl \
     data/annotation/egy_test.csv \
     local/hf-dataset/
-cp docs/cards/dataset_card.md local/hf-dataset/README.md
+cp docs/publishing/dataset_card.md local/hf-dataset/README.md
 
 uv run hf repo create egyptian-nlu --type dataset
 uv run hf upload Alhasan/egyptian-nlu local/hf-dataset . --repo-type dataset
@@ -36,7 +36,7 @@ uv run hf upload Alhasan/egyptian-nlu local/hf-dataset . --repo-type dataset
 ## 2. LoRA adapters
 
 ```bash
-cp docs/cards/model_card_lora.md adapters/D-qwen3-17b/README.md
+cp docs/publishing/model_card_lora.md adapters/D-qwen3-17b/README.md
 uv run hf repo create qwen3-1.7b-egyptian-arabic-lora --type model
 uv run hf upload Alhasan/qwen3-1.7b-egyptian-arabic-lora adapters/D-qwen3-17b .
 ```
@@ -48,7 +48,7 @@ trained with TRL. The 0.6B MLX adapter stays local — it was the on-device expe
 ## 3. Encoder
 
 ```bash
-cp docs/cards/model_card_encoder.md models/E-D-camelbert-da/README.md
+cp docs/publishing/model_card_encoder.md models/E-D-camelbert-da/README.md
 uv run hf repo create camelbert-egyptian-arabic-nlu --type model
 uv run hf upload Alhasan/camelbert-egyptian-arabic-nlu models/E-D-camelbert-da .
 ```
@@ -60,7 +60,7 @@ each HF card. Recruiters land on one and follow the link to the other.
 
 ## Licensing (get this right)
 
-- **Code** — MIT, see [LICENSE](../LICENSE).
+- **Code** — MIT, see [LICENSE](../../LICENSE).
 - **Data** — derived from [Amazon MASSIVE](https://github.com/alexa/massive), **CC BY 4.0**. The
   Egyptian rewrites are transformations of MASSIVE utterances, so they inherit CC BY 4.0 and the
   attribution requirement. The dataset card states this; keep it there.

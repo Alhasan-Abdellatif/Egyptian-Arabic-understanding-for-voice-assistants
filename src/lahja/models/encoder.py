@@ -12,9 +12,12 @@ from pathlib import Path
 import torch
 from torch import nn
 from transformers import AutoModel, AutoTokenizer
+from transformers import logging as hf_logging
 
 from lahja.data.bio import decode_spans
 from lahja.data.formats import target_json
+
+hf_logging.set_verbosity_error()  # the base model's unused heads are expected; don't warn users
 
 
 def pick_device() -> torch.device:

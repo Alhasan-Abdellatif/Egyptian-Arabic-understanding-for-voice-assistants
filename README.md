@@ -2,110 +2,121 @@
 
 [![ci](https://github.com/Alhasan-Abdellatif/Egyptian-Arabic-understanding-for-voice-assistants/actions/workflows/ci.yml/badge.svg)](https://github.com/Alhasan-Abdellatif/Egyptian-Arabic-understanding-for-voice-assistants/actions/workflows/ci.yml)
 
-Turn an Egyptian Arabic voice command into a structured tool call — one intent plus its slots —
-using **LoRA fine-tuned Qwen3**, a **synthetic dialect corpus generated with Claude**, and a
-**native-written benchmark**. Everything is measured against a frontier LLM and a small encoder
-baseline, with paired significance tests.
-
-**Models & data on Hugging Face:**
-[dataset](https://huggingface.co/datasets/Alhasan/egyptian-nlu) ·
-[Qwen3-1.7B LoRA](https://huggingface.co/Alhasan/qwen3-1.7b-egyptian-arabic-lora) ·
-[CAMeLBERT encoder](https://huggingface.co/Alhasan/camelbert-egyptian-arabic-nlu)
+Turn an Egyptian Arabic voice command into a structured tool call — one intent plus its slots.
 
 ```
 صحيني بكرة الساعة ستة الصبح
     → {"intent": "alarm_set", "slots": {"date": "بكرة", "time": "ستة الصبح"}}
 ```
 
-## What it does
+Most Arabic assistant data is Modern Standard or Gulf Arabic, but Egyptians speak Egyptian. This
+project builds the missing training data, fine-tunes models on it, and measures what actually
+helps. 60 intents, 55 slot types, **100% valid JSON** output with plain greedy decoding.
 
-Real predictions from the fine-tuned Qwen3-1.7B — [more in docs/examples.md](docs/examples.md):
+## Install
 
-| Spoken Egyptian input | Model output |
-|---|---|
-| شغل ببجي | `{"intent": "play_game", "slots": {"game_name": "ببجي"}}` |
-| اتصل على أقرب مطعم مندي عندهم توصيل | `{"intent": "takeaway_order", "slots": {"business_type": "مطعم", "food_type": "مندي", "order_type": "توصيل"}}` |
-| ايه عندي في قائمة المهام بتاعتى | `{"intent": "lists_query", "slots": {"list_name": "المهام"}}` |
+```bash
+git clone https://github.com/Alhasan-Abdellatif/Egyptian-Arabic-understanding-for-voice-assistants
+cd Egyptian-Arabic-understanding-for-voice-assistants
+uv sync --extra gpu          # torch + transformers; works on CPU, GPU or Apple silicon
+```
 
-60 intents, 55 slot types, **100% valid JSON** with plain greedy decoding — no constrained decoding.
+With pip instead: `pip install -e ".[gpu]"`. On Apple silicon add `--extra mlx` for fast local
+inference of the LoRA model.
 
-## Results
+## Use it
 
-**[Full report with figures → docs/results.md](docs/results.md)**
+Weights download from the Hugging Face Hub on first run and are cached.
 
-![Exact match on the Egyptian test set](results/figures/headline_egy.png)
+```bash
+python -m lahja.predict "صحيني بكرة الساعة ستة الصبح"
+python -m lahja.predict --model lora "الجو عامل ايه في اسكندرية النهارده"
+echo "شغل اغاني لعمرو دياب" | python -m lahja.predict --compact
+```
 
-- **Fine-tuning beats prompting on this task.** Qwen3-1.7B + LoRA scores **0.590** exact match
-  against **0.435** for Claude Sonnet 5 with five examples — **+15.5 points**, 95% CI
-  [+8.5, +22.5], paired bootstrap. Showing the frontier model five demonstrations does *not*
-  close the gap: its errors are the dataset's labelling conventions, not Arabic comprehension.
-- **Synthetic dialect data helps the model that lacks dialect knowledge.** A 110M dialect-BERT
-  gains a significant **+6.0 points** from it; Qwen3-0.6B/1.7B gain nothing measurable, because
-  they already carry Egyptian from pretraining. On dialect-marked sentences the LLMs do gain
-  ~+6 too — the aggregate hides it.
-- **Small beats large here.** That 110M encoder (0.625) matches the 1.7B LLM (0.590, n.s.) at
-  **20 ms/query on-device** versus ~1 s for the API.
+```json
+{"text": "صحيني بكرة الساعة ستة الصبح", "intent": "alarm_set",
+ "slots": {"date": "بكرة", "time": "ستة الصبح"}}
+```
+
+From Python:
+
+```python
+from lahja.predict import Predictor
+
+nlu = Predictor()                      # 110M encoder: ~20 ms/command, runs on a laptop CPU
+print(nlu(["امسح المنبه", "ضيف البروكلي لقائمة البقالة"]))
+```
+
+`--model lora` swaps in the fine-tuned Qwen3-1.7B: slightly different strengths, much larger.
+`--weights <dir>` uses your own checkpoint. More examples, including failures:
+[docs/examples.md](docs/examples.md).
 
 ## Models and data
-
-Weights and datasets live on the Hub; this repo holds the code, configs and results.
 
 | Artifact | What it is | Size |
 |---|---|---:|
 | [`Alhasan/egyptian-nlu`](https://huggingface.co/datasets/Alhasan/egyptian-nlu) | 200 hand-written Egyptian test commands + 7.2k filtered synthetic training rows | 3 MB |
-| [`Alhasan/qwen3-1.7b-egyptian-arabic-lora`](https://huggingface.co/Alhasan/qwen3-1.7b-egyptian-arabic-lora) | Best accuracy — 0.590 exact match | 70 MB |
-| [`Alhasan/camelbert-egyptian-arabic-nlu`](https://huggingface.co/Alhasan/camelbert-egyptian-arabic-nlu) | 110M joint intent + BIO tagger — best overall (0.625) at 20 ms/query | 417 MB |
+| [`Alhasan/camelbert-egyptian-arabic-nlu`](https://huggingface.co/Alhasan/camelbert-egyptian-arabic-nlu) | 110M joint intent + slot tagger — the default, best scoring | 417 MB |
+| [`Alhasan/qwen3-1.7b-egyptian-arabic-lora`](https://huggingface.co/Alhasan/qwen3-1.7b-egyptian-arabic-lora) | LoRA adapter for Qwen3-1.7B | 70 MB |
 
-Each carries a model or dataset card with the exact prompt format, results and limitations.
-Publishing steps: [docs/huggingface.md](docs/huggingface.md).
+## How well it works
 
-## Quickstart
+Exact match means intent **and** every slot correct, on 200 Egyptian commands written by a native
+speaker. Full report, figures and error analysis: **[docs/results.md](docs/results.md)**.
+
+| Model | Egyptian test | MASSIVE test (Saudi/MSA) | Latency |
+|---|---:|---:|---:|
+| **CAMeLBERT 110M** (default) | **0.625** | 0.586 | 20 ms |
+| Qwen3-1.7B + LoRA | 0.590 | 0.583 | — |
+| Qwen3-0.6B + LoRA | 0.510 | 0.539 | 550 ms |
+| Claude Sonnet 5, 5-shot | 0.435 | 0.450 | ~1 s (API) |
+| Qwen3-0.6B untrained, 5-shot | 0.040 | 0.030 | — |
+
+Fine-tuning beats prompting a frontier model by **+15.5 points** (95% CI [+8.5, +22.5], paired
+bootstrap): its errors are the dataset's labelling conventions, not Arabic comprehension, and five
+examples don't fix that. Synthetic Egyptian data gives the encoder a significant **+6.0**; the
+Qwen3 models gain nothing measurable overall, but **~+6 on dialect-marked sentences**.
+
+## Reproduce it
 
 ```bash
 make setup && make download && make data     # MASSIVE ar-SA -> data/processed
 make pilot && make submit && make collect    # generate Egyptian rewrites (Claude, Batches API)
 make synth && make sft                       # filter -> data/sft/{C,D}
-make train-mlx-D && make train-enc-D         # train (Apple silicon; see docs/ for GPU)
+make train-mlx-D && make train-enc-D         # train
 make eval-mlx-D && make eval-enc-D
-make report && make figures && make examples
+make report && make figures                  # -> results/summary.md, results/figures/
 ```
+
+Training on a GPU: [docs/training-gpu.md](docs/training-gpu.md) (Colab and Kaggle notebooks
+included). On Apple silicon: [docs/training-apple-silicon.md](docs/training-apple-silicon.md).
 
 ## How it works
 
 | Stage | What happens |
 |---|---|
 | **Data** | [Amazon MASSIVE](https://github.com/alexa/massive) `ar-SA` (Saudi/MSA) parsed into intent + slot spans |
-| **Generation** | Claude Sonnet 5 rewrites 4k seeds into Egyptian (2 variants each) in MASSIVE bracket notation |
-| **Filtering** | Rule-based only — slot preservation, copy detection, near-duplicate removal. 8,002 → **7,239** kept |
-| **Benchmark** | 200 Egyptian commands written and slot-annotated by hand by a native speaker |
-| **Training** | LoRA (r=16, α=32) on Qwen3-0.6B/1.7B via mlx-lm and TRL; joint intent+BIO encoder baseline |
-| **Evaluation** | One code path for MLX / PyTorch / API backends; exact match, slot F1, paired bootstrap CIs, leakage-cleaned subset |
+| **Generation** | Claude Sonnet 5 rewrites 4k seeds into Egyptian, two variants each, in MASSIVE bracket notation |
+| **Filtering** | Rule-based only — slot preservation, copy and near-duplicate detection. 8,002 → **7,239** kept |
+| **Benchmark** | 200 Egyptian commands written and slot-annotated by hand ([guide](docs/annotation_guide.md)) |
+| **Training** | LoRA (r=16, α=32) on Qwen3 via mlx-lm and TRL; joint intent + BIO encoder baseline |
+| **Evaluation** | One code path for every backend; exact match, slot F1, paired bootstrap CIs, leakage-cleaned subset |
 
-## Repository layout
+## Project layout
 
 ```
 src/lahja/
-  data/       MASSIVE parsing, Egyptian generation, rule filters, test-set tooling
-  models/     prompts, inference backends (MLX / HF / encoder / Claude), encoder architecture
-  train/      LoRA SFT (mlx-lm + TRL), encoder training, SFT data export
-  eval/       metrics, runners (sync + batch), report, figures, latency benchmarks
-configs/      schema, LoRA config, few-shot examples for generation
-docs/         results, examples, model/dataset cards, Colab & Kaggle guides, CV bullets
-results/      scores, per-item predictions, summary.md, figures/
-tests/        37 tests (parsers, filters, metrics, staleness guard)
+  predict.py    inference entry point (CLI + Predictor class)
+  data/         MASSIVE parsing, Egyptian generation, filters, test-set tooling
+  models/       prompts, backends (encoder / MLX / transformers / Claude), encoder architecture
+  train/        LoRA SFT (mlx-lm + TRL), encoder training, SFT data export
+  eval/         metrics, runners, report, figures, latency benchmarks
+configs/        label schema, LoRA config, few-shot examples for generation
+results/        scores, per-item predictions, summary.md, figures/
+docs/           results, examples, training guides, publishing
+tests/          37 tests
 ```
-
-## Documentation
-
-| | |
-|---|---|
-| [docs/results.md](docs/results.md) | Full results, figures, error analysis, limitations |
-| [docs/examples.md](docs/examples.md) | Real inputs and outputs, including failures |
-| [docs/huggingface.md](docs/huggingface.md) | Publishing the dataset and models to the Hub |
-| [docs/larger_models.md](docs/larger_models.md) | Training bigger models on Apple silicon |
-| [docs/colab.md](docs/colab.md) | GPU track (Colab and Kaggle notebooks) |
-| [docs/annotation_guide.md](docs/annotation_guide.md) | How the human test set was written |
-| [PLAN.md](PLAN.md) | Design, schedule, and a decisions log including what failed |
 
 ## Licence
 
