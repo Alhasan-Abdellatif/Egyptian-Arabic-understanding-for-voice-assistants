@@ -1,0 +1,300 @@
+{"id": "massive-0", "raw": "{\"intent\": \"alarm_set\", \"slots\": {\"time\": \"خمسة الفجر\", \"date\": \"هذا الأسبوع\"}}"}
+{"id": "massive-10027", "raw": "{\"intent\": \"cooking_recipe\", \"slots\": {}}"}
+{"id": "massive-10038", "raw": "{\"intent\": \"cooking_recipe\", \"slots\": {}}"}
+{"id": "massive-10214", "raw": "{\"intent\": \"cooking_recipe\", \"slots\": {\"time\": \"ساعة\"}}"}
+{"id": "massive-10260", "raw": "{\"intent\": \"play_game\", \"slots\": {\"game_name\": \"شطرنج\"}}"}
+{"id": "massive-10357", "raw": "{\"intent\": \"play_game\", \"slots\": {}}"}
+{"id": "massive-10366", "raw": "{\"intent\": \"play_game\", \"slots\": {\"game_name\": \"الفيفا\"}}"}
+{"id": "massive-10440", "raw": "{\"intent\": \"lists_query\", \"slots\": {}}"}
+{"id": "massive-10444", "raw": "{\"intent\": \"lists_remove\", \"slots\": {}}"}
+{"id": "massive-10471", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {}}"}
+{"id": "massive-10503", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"مهام\", \"date\": \"السبت\"}}"}
+{"id": "massive-10508", "raw": "{\"intent\": \"lists_remove\", \"slots\": {}}"}
+{"id": "massive-10568", "raw": "{\"intent\": \"lists_remove\", \"slots\": {\"list_name\": \"الأغاني القديمة\"}}"}
+{"id": "massive-1071", "raw": "{\"intent\": \"iot_hue_lightup\", \"slots\": {\"house_place\": \"hallway\"}}"}
+{"id": "massive-10755", "raw": "{\"intent\": \"lists_remove\", \"slots\": {\"list_name\": \"المهام\"}}"}
+{"id": "massive-1076", "raw": "{\"intent\": \"play_music\", \"slots\": {\"song_name\": \"عود\"}}"}
+{"id": "massive-10931", "raw": "{\"intent\": \"music_query\", \"slots\": {}}"}
+{"id": "massive-10936", "raw": "{\"intent\": \"lists_remove\", \"slots\": {\"list_name\": \"ألبوماتي المفضلة\"}}"}
+{"id": "massive-1098", "raw": "{\"intent\": \"datetime_query\", \"slots\": {\"date\": \"خمسطعشر مارس\"}}"}
+{"id": "massive-10996", "raw": "{\"intent\": \"email_addcontact\", \"slots\": {\"person\": \"عماد\"}}"}
+{"id": "massive-11029", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {}}"}
+{"id": "massive-11067", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"البقالة\"}}"}
+{"id": "massive-11172", "raw": "{\"intent\": \"lists_query\", \"slots\": {}}"}
+{"id": "massive-11174", "raw": "{\"intent\": \"lists_query\", \"slots\": {}}"}
+{"id": "massive-11177", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": \"التسوق\"}}"}
+{"id": "massive-11259", "raw": "{\"intent\": \"play_podcasts\", \"slots\": {}}"}
+{"id": "massive-11302", "raw": "{\"intent\": \"play_podcasts\", \"slots\": {\"podcast_name\": \"الستات\"}}"}
+{"id": "massive-11368", "raw": "{\"intent\": \"play_podcasts\", \"slots\": {\"podcast_name\": \"john's\"}}"}
+{"id": "massive-11384", "raw": "{\"intent\": \"play_podcasts\", \"slots\": {}}"}
+{"id": "massive-11418", "raw": "{\"intent\": \"play_podcasts\", \"slots\": {\"podcast_name\": \"آخر\", \"person\": \"كاظم الساهر\"}}"}
+{"id": "massive-11451", "raw": "{\"intent\": \"play_podcasts\", \"slots\": {\"podcast_name\": \"اخر مدونة\", \"person\": \"لفيصل السيف\"}}"}
+{"id": "massive-11505", "raw": "{\"intent\": \"play_podcasts\", \"slots\": {}}"}
+{"id": "massive-11529", "raw": "{\"intent\": \"play_podcasts\", \"slots\": {\"podcast_descriptor\": \"المدونة الصوتية\"}}"}
+{"id": "massive-11554", "raw": "{\"intent\": \"play_podcasts\", \"slots\": {}}"}
+{"id": "massive-1160", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"weather_descriptor\": \"بارد\", \"timeofday\": \"كل مساء\", \"date\": \"هذا الاسبوع\"}}"}
+{"id": "massive-11782", "raw": "{\"intent\": \"recommendation_events\", \"slots\": {\"date\": \"نهاية الأسبوع\"}}"}
+{"id": "massive-11825", "raw": "{\"intent\": \"recommendation_locations\", \"slots\": {\"business_type\": \"مركز تسوق\", \"place_name\": \"القصيم\"}}"}
+{"id": "massive-11903", "raw": "{\"intent\": \"recommendation_locations\", \"slots\": {\"business_type\": \"أسواق محلية\"}}"}
+{"id": "massive-11911", "raw": "{\"intent\": \"recommendation_events\", \"slots\": {\"date\": \"نهاية هذا الأسبوع\", \"place_name\": \"المنطقة\"}}"}
+{"id": "massive-11959", "raw": "{\"intent\": \"recommendation_locations\", \"slots\": {\"business_type\": \"المحلات\"}}"}
+{"id": "massive-12281", "raw": "{\"intent\": \"transport_query\", \"slots\": {\"transport_type\": \"قطار\", \"place_name\": \"الرياض جدة\"}}"}
+{"id": "massive-12291", "raw": "{\"intent\": \"transport_query\", \"slots\": {\"place_name\": \"جدة\"}}"}
+{"id": "massive-12354", "raw": "{\"intent\": \"transport_query\", \"slots\": {\"transport_type\": \"قطار\"}}"}
+{"id": "massive-12430", "raw": "{\"intent\": \"transport_query\", \"slots\": {\"transport_type\": \"القطار\", \"place_name\": \"للرياض\"}}"}
+{"id": "massive-12469", "raw": "{\"intent\": \"transport_query\", \"slots\": {\"place_name\": \"الرياض\", \"transport_type\": \"بالقطار\"}}"}
+{"id": "massive-12606", "raw": "{\"intent\": \"transport_ticket\", \"slots\": {\"transport_type\": \"قطار\", \"place_name\": \"تبوك\", \"date\": \"ينبع\"}}"}
+{"id": "massive-12672", "raw": "{\"intent\": \"transport_traffic\", \"slots\": {\"place_name\": \"المدينة\"}}"}
+{"id": "massive-12835", "raw": "{\"intent\": \"transport_query\", \"slots\": {\"transport_type\": \"القطار\"}}"}
+{"id": "massive-12838", "raw": "{\"intent\": \"calendar_set\", \"slots\": {}}"}
+{"id": "massive-12883", "raw": "{\"intent\": \"transport_query\", \"slots\": {\"transport_type\": \"قطار\", \"date\": \"نهاية الأسبوع ستة وعشرين\", \"place_name\": \"خميس مشيط\"}}"}
+{"id": "massive-12951", "raw": "{\"intent\": \"qa_factoid\", \"slots\": {}}"}
+{"id": "massive-13035", "raw": "{\"intent\": \"qa_maths\", \"slots\": {}}"}
+{"id": "massive-13040", "raw": "{\"intent\": \"qa_maths\", \"slots\": {}}"}
+{"id": "massive-13067", "raw": "{\"intent\": \"lists_createoradd\", \"slots\": {\"list_name\": [\"قائمة تسوق\", \"للمكونات\"]}}"}
+{"id": "massive-13069", "raw": "{\"intent\": \"qa_definition\", \"slots\": {\"definition_word\": \"البرتقال\"}}"}
+{"id": "massive-13124", "raw": "{\"intent\": \"qa_factoid\", \"slots\": {}}"}
+{"id": "massive-13166", "raw": "{\"intent\": \"qa_definition\", \"slots\": {\"definition_word\": \"المنطق\"}}"}
+{"id": "massive-13341", "raw": "{\"intent\": \"music_likeness\", \"slots\": {}}"}
+{"id": "massive-13359", "raw": "{\"intent\": \"qa_maths\", \"slots\": {}}"}
+{"id": "massive-13370", "raw": "{\"intent\": \"qa_maths\", \"slots\": {}}"}
+{"id": "massive-13524", "raw": "{\"intent\": \"general_quirky\", \"slots\": {}}"}
+{"id": "massive-13547", "raw": "{\"intent\": \"recommendation_movies\", \"slots\": {\"person\": \"عادل امام\", \"timeofday\": \"ليلة أمس\"}}"}
+{"id": "massive-13567", "raw": "{\"intent\": \"qa_currency\", \"slots\": {}}"}
+{"id": "massive-13580", "raw": "{\"intent\": \"qa_factoid\", \"slots\": {\"place_name\": \"جبل إفرست\"}}"}
+{"id": "massive-13685", "raw": "{\"intent\": \"qa_currency\", \"slots\": {\"currency_name\": \"الدولار\"}}"}
+{"id": "massive-13706", "raw": "{\"intent\": \"qa_definition\", \"slots\": {\"definition_word\": \"المحور\"}}"}
+{"id": "massive-13717", "raw": "{\"intent\": \"play_audiobook\", \"slots\": {\"audiobook_name\": \"روسيا\", \"audiobook_author\": \"ألASKA\"}}"}
+{"id": "massive-13796", "raw": "{\"intent\": \"qa_currency\", \"slots\": {\"currency_name\": [\"السعودية\", \"الإمارات\"]}}"}
+{"id": "massive-13888", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"weather_descriptor\": \"درجة الحرارة\", \"place_name\": \"سدير الرياض\"}}"}
+{"id": "massive-13986", "raw": "{\"intent\": \"general_quirky\", \"slots\": {}}"}
+{"id": "massive-14000", "raw": "{\"intent\": \"qa_definition\", \"slots\": {\"definition_word\": \"الكسل\"}}"}
+{"id": "massive-14038", "raw": "{\"intent\": \"qa_factoid\", \"slots\": {\"place_name\": \"مولدوفا\"}}"}
+{"id": "massive-14044", "raw": "{\"intent\": \"qa_currency\", \"slots\": {}}"}
+{"id": "massive-14150", "raw": "{\"intent\": \"qa_definition\", \"slots\": {\"definition_word\": \"جزمة سكتشيرز\"}}"}
+{"id": "massive-14189", "raw": "{\"intent\": \"qa_stock\", \"slots\": {\"business_name\": \"ستارباكس\"}}"}
+{"id": "massive-14190", "raw": "{\"intent\": \"qa_stock\", \"slots\": {\"business_name\": \"ستارباكس\"}}"}
+{"id": "massive-14214", "raw": "{\"intent\": \"transport_query\", \"slots\": {}}"}
+{"id": "massive-1423", "raw": "{\"intent\": \"qa_factoid\", \"slots\": {\"person\": \"سلمان بن عبد العزيز آل سعود\"}}"}
+{"id": "massive-14342", "raw": "{\"intent\": \"qa_stock\", \"slots\": {\"business_name\": \"أمازون\"}}"}
+{"id": "massive-14347", "raw": "{\"intent\": \"qa_definition\", \"slots\": {\"definition_word\": \"الفرضية\"}}"}
+{"id": "massive-14356", "raw": "{\"intent\": \"general_quirky\", \"slots\": {}}"}
+{"id": "massive-14370", "raw": "{\"intent\": \"qa_factoid\", \"slots\": {}}"}
+{"id": "massive-14417", "raw": "{\"intent\": \"qa_factoid\", \"slots\": {}}"}
+{"id": "massive-14429", "raw": "{\"intent\": \"qa_definition\", \"slots\": {\"definition_word\": \"القفطان\"}}"}
+{"id": "massive-14505", "raw": "{\"intent\": \"qa_factoid\", \"slots\": {\"person\": \"رئيس الوزراء\"}}"}
+{"id": "massive-14526", "raw": "{\"intent\": \"qa_currency\", \"slots\": {\"currency_name\": \"الريال السعودي\"}}"}
+{"id": "massive-14545", "raw": "{\"intent\": \"qa_factoid\", \"slots\": {}}"}
+{"id": "massive-14555", "raw": "{\"intent\": \"qa_stock\", \"slots\": {}}"}
+{"id": "massive-14684", "raw": "{\"intent\": \"qa_factoid\", \"slots\": {\"place_name\": \"روسيا\"}}"}
+{"id": "massive-14761", "raw": "{\"intent\": \"qa_definition\", \"slots\": {\"definition_word\": \"المنطق\"}}"}
+{"id": "massive-14763", "raw": "{\"intent\": \"qa_currency\", \"slots\": {\"currency_name\": [\"الريال السعودي\", \"الدرهم الإماراتي\"]}}"}
+{"id": "massive-14891", "raw": "{\"intent\": \"qa_factoid\", \"slots\": {}}"}
+{"id": "massive-15039", "raw": "{\"intent\": \"qa_factoid\", \"slots\": {}}"}
+{"id": "massive-1509", "raw": "{\"intent\": \"audio_volume_mute\", \"slots\": {\"timeofday\": \"الصباح\"}}"}
+{"id": "massive-15133", "raw": "{\"intent\": \"qa_definition\", \"slots\": {\"definition_word\": \"كارفور\"}}"}
+{"id": "massive-15138", "raw": "{\"intent\": \"social_query\", \"slots\": {}}"}
+{"id": "massive-1516", "raw": "{\"intent\": \"takeaway_order\", \"slots\": {\"food_type\": \"بيتزا\", \"business_name\": \"مايسترو\"}}"}
+{"id": "massive-15166", "raw": "{\"intent\": \"social_post\", \"slots\": {\"media_type\": \"غرد\", \"business_name\": \"twitter\"}}"}
+{"id": "massive-15185", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"event_name\": \"امنيات عيد الميلاد\"}}"}
+{"id": "massive-15214", "raw": "{\"intent\": \"news_query\", \"slots\": {\"date\": \"اليوم\"}}"}
+{"id": "massive-1527", "raw": "{\"intent\": \"calendar_set\", \"slots\": {}}"}
+{"id": "massive-15298", "raw": "{\"intent\": \"social_query\", \"slots\": {}}"}
+{"id": "massive-15311", "raw": "{\"intent\": \"social_query\", \"slots\": {\"media_type\": \"فيسبوك\"}}"}
+{"id": "massive-1537", "raw": "{\"intent\": \"datetime_query\", \"slots\": {\"place_name\": \"قطر\"}}"}
+{"id": "massive-15456", "raw": "{\"intent\": \"social_post\", \"slots\": {\"business_name\": \"خطوط طيران الإمارات\"}}"}
+{"id": "massive-1549", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"weather_descriptor\": \"تمطر\", \"date\": \"هذا الأسبوع\"}}"}
+{"id": "massive-15508", "raw": "{\"intent\": \"social_post\", \"slots\": {\"media_type\": \"تغريد تويتر\"}}"}
+{"id": "massive-15553", "raw": "{\"intent\": \"social_post\", \"slots\": {\"media_type\": \"غرد\", \"business_name\": \"كارفور\"}}"}
+{"id": "massive-15672", "raw": "{\"intent\": \"social_post\", \"slots\": {\"media_type\": \"غرد\", \"business_name\": \"apple\"}}"}
+{"id": "massive-15700", "raw": "{\"intent\": \"lists_query\", \"slots\": {\"list_name\": \"السوق الجديد\"}}"}
+{"id": "massive-15756", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"relation\": \"لفريقي\"}}"}
+{"id": "massive-15796", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"person\": \"لبشاير\"}}"}
+{"id": "massive-15880", "raw": "{\"intent\": \"email_query\", \"slots\": {}}"}
+{"id": "massive-15957", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {}}"}
+{"id": "massive-16038", "raw": "{\"intent\": \"email_querycontact\", \"slots\": {\"person\": \"محمد\"}}"}
+{"id": "massive-16049", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"relation\": \"لأهلي\"}}"}
+{"id": "massive-16050", "raw": "{\"intent\": \"email_query\", \"slots\": {}}"}
+{"id": "massive-16100", "raw": "{\"intent\": \"email_query\", \"slots\": {}}"}
+{"id": "massive-16163", "raw": "{\"intent\": \"email_query\", \"slots\": {\"date\": \"أمس\"}}"}
+{"id": "massive-16165", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"person\": \"هيفاء\"}}"}
+{"id": "massive-16168", "raw": "{\"intent\": \"email_query\", \"slots\": {\"time\": \"آخر ربع ساعة\"}}"}
+{"id": "massive-16170", "raw": "{\"intent\": \"email_query\", \"slots\": {}}"}
+{"id": "massive-16221", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"person\": \"ريم\"}}"}
+{"id": "massive-16228", "raw": "{\"intent\": \"calendar_query\", \"slots\": {\"event_name\": \"عيد ميلاد\", \"date\": \"هذا الشهر\"}}"}
+{"id": "massive-16276", "raw": "{\"intent\": \"email_query\", \"slots\": {}}"}
+{"id": "massive-16282", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"person\": \"للسكرتيرة ليلى\", \"date\": \"بكره\"}}"}
+{"id": "massive-16437", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"relation\": \"لخويي\"}}"}
+{"id": "massive-16613", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"relation\": \"للمدير\"}}"}
+{"id": "massive-16630", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {}}"}
+{"id": "massive-16652", "raw": "{\"intent\": \"email_query\", \"slots\": {\"person\": \"سامي\"}}"}
+{"id": "massive-1666", "raw": "{\"intent\": \"news_query\", \"slots\": {\"time\": \"الست ساعات الماضية\"}}"}
+{"id": "massive-16669", "raw": "{\"intent\": \"email_query\", \"slots\": {\"person\": \"يوسف\"}}"}
+{"id": "massive-16698", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"relation\": \"أمي\"}}"}
+{"id": "massive-16701", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"person\": \"سلافة\"}}"}
+{"id": "massive-16729", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"relation\": \"صديقاتي\", \"date\": \"بكره\"}}"}
+{"id": "massive-16763", "raw": "{\"intent\": \"email_query\", \"slots\": {\"time\": \"آخر عشر دقايق\"}}"}
+{"id": "massive-16765", "raw": "{\"intent\": \"email_query\", \"slots\": {\"event_name\": \"المقابلة\", \"date\": \"أمس\"}}"}
+{"id": "massive-16781", "raw": "{\"intent\": \"email_addcontact\", \"slots\": {}}"}
+{"id": "massive-1683", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"weather_descriptor\": \"درجة الحرارة\", \"date\": \"بكرة\"}}"}
+{"id": "massive-16859", "raw": "{\"intent\": \"email_query\", \"slots\": {\"person\": \"فاطمة\"}}"}
+{"id": "massive-16883", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"person\": \"لخالد\", \"timeofday\": \"الليلة\"}}"}
+{"id": "massive-16987", "raw": "{\"intent\": \"email_query\", \"slots\": {\"person\": \"ريان\"}}"}
+{"id": "massive-17042", "raw": "{\"intent\": \"email_sendemail\", \"slots\": {\"email_address\": \"saleh at gmail dot com\"}}"}
+{"id": "massive-17075", "raw": "{\"intent\": \"email_query\", \"slots\": {\"time\": \"بعد الساعة أربعة\", \"date\": \"اليوم\"}}"}
+{"id": "massive-17157", "raw": "{\"intent\": \"email_query\", \"slots\": {\"person\": \"هتان\"}}"}
+{"id": "massive-1741", "raw": "{\"intent\": \"music_query\", \"slots\": {}}"}
+{"id": "massive-1777", "raw": "{\"intent\": \"play_music\", \"slots\": {}}"}
+{"id": "massive-1778", "raw": "{\"intent\": \"iot_hue_lightdim\", \"slots\": {}}"}
+{"id": "massive-19", "raw": "{\"intent\": \"iot_hue_lightoff\", \"slots\": {\"house_place\": \"بغرفة النوم\"}}"}
+{"id": "massive-1904", "raw": "{\"intent\": \"general_quirky\", \"slots\": {}}"}
+{"id": "massive-1941", "raw": "{\"intent\": \"iot_cleaning\", \"slots\": {\"house_place\": \"بيتي\"}}"}
+{"id": "massive-1960", "raw": "{\"intent\": \"iot_hue_lightchange\", \"slots\": {\"color_type\": \"زهري\"}}"}
+{"id": "massive-1962", "raw": "{\"intent\": \"play_music\", \"slots\": {\"playlist_name\": \"wacky my\"}}"}
+{"id": "massive-2026", "raw": "{\"intent\": \"iot_coffee\", \"slots\": {}}"}
+{"id": "massive-2057", "raw": "{\"intent\": \"music_likeness\", \"slots\": {}}"}
+{"id": "massive-2205", "raw": "{\"intent\": \"audio_volume_mute\", \"slots\": {\"time\": \"ساعتين\"}}"}
+{"id": "massive-2230", "raw": "{\"intent\": \"iot_hue_lightoff\", \"slots\": {\"house_place\": \"المطبخ\"}}"}
+{"id": "massive-2234", "raw": "{\"intent\": \"iot_hue_lightup\", \"slots\": {}}"}
+{"id": "massive-2237", "raw": "{\"intent\": \"news_query\", \"slots\": {\"place_name\": \"العالمية\"}}"}
+{"id": "massive-2283", "raw": "{\"intent\": \"iot_hue_lightchange\", \"slots\": {\"color_type\": \"blue\"}}"}
+{"id": "massive-2315", "raw": "{\"intent\": \"news_query\", \"slots\": {\"date\": \"حق اليوم\"}}"}
+{"id": "massive-2387", "raw": "{\"intent\": \"music_query\", \"slots\": {}}"}
+{"id": "massive-2432", "raw": "{\"intent\": \"takeaway_order\", \"slots\": {\"business_name\": \"شصار\"}}"}
+{"id": "massive-2434", "raw": "{\"intent\": \"iot_cleaning\", \"slots\": {\"device_type\": \"المكنسة الكهربائية\"}}"}
+{"id": "massive-2441", "raw": "{\"intent\": \"iot_hue_lightoff\", \"slots\": {\"house_place\": \"سقيفة\"}}"}
+{"id": "massive-2647", "raw": "{\"intent\": \"play_radio\", \"slots\": {\"radio_name\": \"قناة فيروز\"}}"}
+{"id": "massive-2798", "raw": "{\"intent\": \"play_music\", \"slots\": {\"song_name\": \"بترجعين\"}}"}
+{"id": "massive-281", "raw": "{\"intent\": \"news_query\", \"slots\": {\"news_topic\": \"الحرب في اليمن\"}}"}
+{"id": "massive-2816", "raw": "{\"intent\": \"iot_hue_lightchange\", \"slots\": {\"house_place\": \"غرفة الغسيل\", \"change_amount\": \"خمسين بالمية\"}}"}
+{"id": "massive-2859", "raw": "{\"intent\": \"datetime_query\", \"slots\": {\"place_name\": \"مكة\"}}"}
+{"id": "massive-2868", "raw": "{\"intent\": \"iot_coffee\", \"slots\": {}}"}
+{"id": "massive-2921", "raw": "{\"intent\": \"news_query\", \"slots\": {\"media_type\": \"الجزيرة\"}}"}
+{"id": "massive-296", "raw": "{\"intent\": \"play_music\", \"slots\": {\"playlist_name\": \"قايمة التشغيل اللبنانية\"}}"}
+{"id": "massive-3029", "raw": "{\"intent\": \"music_dislikeness\", \"slots\": {}}"}
+{"id": "massive-3031", "raw": "{\"intent\": \"play_music\", \"slots\": {}}"}
+{"id": "massive-3037", "raw": "{\"intent\": \"news_query\", \"slots\": {}}"}
+{"id": "massive-31", "raw": "{\"intent\": \"transport_traffic\", \"slots\": {}}"}
+{"id": "massive-310", "raw": "{\"intent\": \"datetime_query\", \"slots\": {\"date\": \"رأس السنة الجديدة هاذي السنة\"}}"}
+{"id": "massive-3162", "raw": "{\"intent\": \"alarm_query\", \"slots\": {}}"}
+{"id": "massive-3167", "raw": "{\"intent\": \"iot_hue_lightoff\", \"slots\": {\"house_place\": \"غرفة النوم\"}}"}
+{"id": "massive-319", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"place_name\": \"مدريد\"}}"}
+{"id": "massive-3205", "raw": "{\"intent\": \"play_music\", \"slots\": {\"song_name\": \"تجرحني واحبك\"}}"}
+{"id": "massive-3280", "raw": "{\"intent\": \"iot_hue_lightdim\", \"slots\": {\"color_type\": \"blue\"}}"}
+{"id": "massive-3387", "raw": "{\"intent\": \"cooking_recipe\", \"slots\": {\"food_type\": \"حمرا\"}}"}
+{"id": "massive-3400", "raw": "{\"intent\": \"play_music\", \"slots\": {\"artist_name\": \"إلتون جون\"}}"}
+{"id": "massive-344", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"weather_descriptor\": \"ماطر\", \"date\": \"بكرة\"}}"}
+{"id": "massive-3441", "raw": "{\"intent\": \"datetime_query\", \"slots\": {\"date\": \"اثنين وعشرين\"}}"}
+{"id": "massive-3542", "raw": "{\"intent\": \"iot_hue_lightchange\", \"slots\": {\"house_place\": \"غرفة المعيشة\", \"color_type\": [\"أخضر\", \"أحمر\"]}}"}
+{"id": "massive-3546", "raw": "{\"intent\": \"play_music\", \"slots\": {\"music_genre\": \"jazz music\"}}"}
+{"id": "massive-3590", "raw": "{\"intent\": \"audio_volume_up\", \"slots\": {}}"}
+{"id": "massive-3686", "raw": "{\"intent\": \"play_music\", \"slots\": {\"music_genre\": \"rock\"}}"}
+{"id": "massive-3774", "raw": "{\"intent\": \"iot_wemo_off\", \"slots\": {\"device_type\": \"الفيش الذكي\"}}"}
+{"id": "massive-3780", "raw": "{\"intent\": \"play_music\", \"slots\": {\"music_genre\": \"كلاسيكية\"}}"}
+{"id": "massive-3829", "raw": "{\"intent\": \"alarm_remove\", \"slots\": {\"time\": \"تسعة في أيام الأسبوع\"}}"}
+{"id": "massive-3864", "raw": "{\"intent\": \"music_query\", \"slots\": {}}"}
+{"id": "massive-3986", "raw": "{\"intent\": \"alarm_set\", \"slots\": {\"time\": \"ستة الصبح\"}}"}
+{"id": "massive-4077", "raw": "{\"intent\": \"iot_hue_lightoff\", \"slots\": {\"house_place\": \"المطبخ\"}}"}
+{"id": "massive-4090", "raw": "{\"intent\": \"audio_volume_up\", \"slots\": {}}"}
+{"id": "massive-4173", "raw": "{\"intent\": \"iot_cleaning\", \"slots\": {\"device_type\": \"المكنسة الكهربائية\"}}"}
+{"id": "massive-4249", "raw": "{\"intent\": \"iot_hue_lightchange\", \"slots\": {\"house_place\": \"house\", \"color_type\": [\"pink\", \"blue\"]}}"}
+{"id": "massive-430", "raw": "{\"intent\": \"weather_query\", \"slots\": {}}"}
+{"id": "massive-4313", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"weather_descriptor\": \"مطر\", \"date\": \"بكرة\", \"place_name\": \"الخبر\"}}"}
+{"id": "massive-4346", "raw": "{\"intent\": \"iot_hue_lightoff\", \"slots\": {}}"}
+{"id": "massive-4377", "raw": "{\"intent\": \"weather_query\", \"slots\": {}}"}
+{"id": "massive-4428", "raw": "{\"intent\": \"music_query\", \"slots\": {}}"}
+{"id": "massive-4439", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"place_name\": \"مكة\"}}"}
+{"id": "massive-4449", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"weather_descriptor\": \"ستمطر\", \"date\": \"وحدة اليوم\"}}"}
+{"id": "massive-4477", "raw": "{\"intent\": \"play_music\", \"slots\": {}}"}
+{"id": "massive-448", "raw": "{\"intent\": \"iot_coffee\", \"slots\": {\"device_type\": \"coffee maker\", \"ingredient\": \"vinegar\"}}"}
+{"id": "massive-4487", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"weather_descriptor\": \"تمطر\", \"date\": \"الخميس\"}}"}
+{"id": "massive-4516", "raw": "{\"intent\": \"iot_hue_lightchange\", \"slots\": {}}"}
+{"id": "massive-4589", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"event_name\": \"للمباريات\"}}"}
+{"id": "massive-4710", "raw": "{\"intent\": \"datetime_query\", \"slots\": {\"event_name\": \"عيد الفطر\", \"date\": \"هاذي السنة\"}}"}
+{"id": "massive-4837", "raw": "{\"intent\": \"news_query\", \"slots\": {}}"}
+{"id": "massive-4838", "raw": "{\"intent\": \"play_music\", \"slots\": {\"music_genre\": \"سهم\"}}"}
+{"id": "massive-4854", "raw": "{\"intent\": \"audio_volume_mute\", \"slots\": {}}"}
+{"id": "massive-4985", "raw": "{\"intent\": \"music_likeness\", \"slots\": {}}"}
+{"id": "massive-5051", "raw": "{\"intent\": \"alarm_set\", \"slots\": {}}"}
+{"id": "massive-5149", "raw": "{\"intent\": \"iot_coffee\", \"slots\": {}}"}
+{"id": "massive-5156", "raw": "{\"intent\": \"iot_hue_lightoff\", \"slots\": {\"house_place\": \"الصالة\"}}"}
+{"id": "massive-5196", "raw": "{\"intent\": \"news_query\", \"slots\": {\"media_type\": \"الجزيرة\"}}"}
+{"id": "massive-5198", "raw": "{\"intent\": \"play_music\", \"slots\": {\"music_descriptor\": \"خمس نجوم\"}}"}
+{"id": "massive-5219", "raw": "{\"intent\": \"audio_volume_down\", \"slots\": {}}"}
+{"id": "massive-5245", "raw": "{\"intent\": \"news_query\", \"slots\": {\"news_topic\": \"البيئية\"}}"}
+{"id": "massive-540", "raw": "{\"intent\": \"play_music\", \"slots\": {\"song_name\": \"ولهان\", \"artist_name\": \"لراشد الماجد\"}}"}
+{"id": "massive-5550", "raw": "{\"intent\": \"audio_volume_mute\", \"slots\": {}}"}
+{"id": "massive-5593", "raw": "{\"intent\": \"general_quirky\", \"slots\": {}}"}
+{"id": "massive-5614", "raw": "{\"intent\": \"play_radio\", \"slots\": {}}"}
+{"id": "massive-5623", "raw": "{\"intent\": \"alarm_set\", \"slots\": {\"time\": \"عشرة الصباح\"}}"}
+{"id": "massive-5671", "raw": "{\"intent\": \"datetime_query\", \"slots\": {\"place_name\": \"الرياض\"}}"}
+{"id": "massive-5691", "raw": "{\"intent\": \"play_music\", \"slots\": {\"artist_name\": \"محمد عبده\"}}"}
+{"id": "massive-5721", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"date\": \"الغد\"}}"}
+{"id": "massive-5955", "raw": "{\"intent\": \"general_quirky\", \"slots\": {}}"}
+{"id": "massive-5958", "raw": "{\"intent\": \"audio_volume_mute\", \"slots\": {}}"}
+{"id": "massive-6103", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"date\": \"اليوم\", \"place_name\": \"الرياض\"}}"}
+{"id": "massive-6109", "raw": "{\"intent\": \"play_music\", \"slots\": {\"song_name\": \"حمل أحبك\", \"artist_name\": \"song\"}}"}
+{"id": "massive-6118", "raw": "{\"intent\": \"datetime_query\", \"slots\": {\"place_name\": \"مكة\"}}"}
+{"id": "massive-6127", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"weather_descriptor\": \"بمظلات\"}}"}
+{"id": "massive-6129", "raw": "{\"intent\": \"news_query\", \"slots\": {\"place_name\": \"العالم\"}}"}
+{"id": "massive-6366", "raw": "{\"intent\": \"recommendation_locations\", \"slots\": {\"place_name\": \"السعودية\"}}"}
+{"id": "massive-6431", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"event_name\": \"اجتماع\", \"person\": \"أحمد\", \"date\": \"اليوم\"}}"}
+{"id": "massive-6432", "raw": "{\"intent\": \"calendar_query\", \"slots\": {\"date\": \"اليوم\", \"event_name\": \"اجتماع\", \"person\": \"محمد\"}}"}
+{"id": "massive-6539", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"date\": \"اليوم\", \"event_name\": \"بداية الرجيم\"}}"}
+{"id": "massive-6559", "raw": "{\"intent\": \"general_quirky\", \"slots\": {}}"}
+{"id": "massive-6663", "raw": "{\"intent\": \"recommendation_locations\", \"slots\": {\"business_type\": \"سياحية\"}}"}
+{"id": "massive-6670", "raw": "{\"intent\": \"general_quirky\", \"slots\": {}}"}
+{"id": "massive-6722", "raw": "{\"intent\": \"calendar_set\", \"slots\": {}}"}
+{"id": "massive-6729", "raw": "{\"intent\": \"calendar_remove\", \"slots\": {\"meal_type\": \"الفطور\", \"person\": \"رنا\"}}"}
+{"id": "massive-6968", "raw": "{\"intent\": \"calendar_query\", \"slots\": {\"event_name\": \"اجتماعات\", \"date\": \"اليوم\"}}"}
+{"id": "massive-6973", "raw": "{\"intent\": \"calendar_query\", \"slots\": {\"event_name\": \"مؤتمر\", \"date\": \"بكرة\", \"place_name\": \"مكة المكرمة\"}}"}
+{"id": "massive-7013", "raw": "{\"intent\": \"calendar_query\", \"slots\": {}}"}
+{"id": "massive-702", "raw": "{\"intent\": \"iot_hue_lightdim\", \"slots\": {}}"}
+{"id": "massive-7185", "raw": "{\"intent\": \"calendar_query\", \"slots\": {\"event_name\": \"موعد\", \"person\": \"دكتور محمد\"}}"}
+{"id": "massive-7209", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"event_name\": \"اطلع الزبالة\", \"date\": \"الثلاثاء\"}}"}
+{"id": "massive-7224", "raw": "{\"intent\": \"recommendation_events\", \"slots\": {\"event_name\": \"عرس tom\"}}"}
+{"id": "massive-7353", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"place_name\": \"الرياض\", \"time\": \"الأسابيع الجاية\"}}"}
+{"id": "massive-7397", "raw": "{\"intent\": \"calendar_query\", \"slots\": {\"time\": \"للثلاثة الشهور الجاية\"}}"}
+{"id": "massive-7503", "raw": "{\"intent\": \"recommendation_events\", \"slots\": {\"place_name\": \"الرياض\", \"event_name\": \"اجتماع\", \"time\": \"وحدة الظهر\", \"date\": \"الجمعة\"}}"}
+{"id": "massive-7598", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"event_name\": \"اجتماع\", \"date\": \"ثاني\", \"person\": \"سعد\", \"relation\": \"الإرهاب\"}}"}
+{"id": "massive-761", "raw": "{\"intent\": \"music_query\", \"slots\": {}}"}
+{"id": "massive-7628", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"event_name\": \"أخذ بطاقة مكتبة جديدة\"}}"}
+{"id": "massive-7660", "raw": "{\"intent\": \"calendar_remove\", \"slots\": {\"time\": \"الساعة ثلاثة العصر\", \"date\": \"اليوم\"}}"}
+{"id": "massive-7767", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"date\": \"الرابع من فبراير\", \"place_name\": \"برج خليفة\", \"time\": \"الثانية مساء\"}}"}
+{"id": "massive-7844", "raw": "{\"intent\": \"alarm_query\", \"slots\": {}}"}
+{"id": "massive-7851", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"event_name\": \"اجتماع\", \"timeofday\": \"ظهر\", \"date\": \"اليوم\"}}"}
+{"id": "massive-7879", "raw": "{\"intent\": \"calendar_query\", \"slots\": {\"event_name\": \"المواعيد الثلاثة الجاية\"}}"}
+{"id": "massive-7892", "raw": "{\"intent\": \"calendar_query\", \"slots\": {\"date\": \"اليوم\"}}"}
+{"id": "massive-7902", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"event_name\": \"اجتماع\", \"person\": \"فهد\", \"date\": \"بكره\", \"time\": \"اثنين الظهر\"}}"}
+{"id": "massive-8037", "raw": "{\"intent\": \"calendar_set\", \"slots\": {}}"}
+{"id": "massive-8260", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"event_name\": \"عيد ميلاد\", \"person\": \"عمر\"}}"}
+{"id": "massive-8294", "raw": "{\"intent\": \"calendar_set\", \"slots\": {}}"}
+{"id": "massive-832", "raw": "{\"intent\": \"weather_query\", \"slots\": {\"date\": \"بكرة\"}}"}
+{"id": "massive-8343", "raw": "{\"intent\": \"calendar_query\", \"slots\": {\"date\": \"اليوم\"}}"}
+{"id": "massive-8413", "raw": "{\"intent\": \"calendar_set\", \"slots\": {}}"}
+{"id": "massive-8414", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"meal_type\": \"عشاء\", \"person\": \"نبيل\", \"date\": \"الجمعة\", \"time\": \"الخامسة مساء\"}}"}
+{"id": "massive-8430", "raw": "{\"intent\": \"calendar_remove\", \"slots\": {}}"}
+{"id": "massive-8436", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"event_name\": \"اجتماع\", \"meal_type\": \"الغدا\", \"time\": \"اثنعشر الظهر\", \"general_frequency\": \"كل ربوع في march\"}}"}
+{"id": "massive-8453", "raw": "{\"intent\": \"calendar_set\", \"slots\": {}}"}
+{"id": "massive-8767", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"event_name\": \"عبد ميلاد\", \"person\": \"أروى\", \"date\": \"اثنعش أبريل\"}}"}
+{"id": "massive-8795", "raw": "{\"intent\": \"alarm_query\", \"slots\": {}}"}
+{"id": "massive-8967", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"date\": \"قبل يومين\", \"event_name\": \"عيد ميلاد\", \"relation\": \"زوجتي\"}}"}
+{"id": "massive-897", "raw": "{\"intent\": \"iot_hue_lightchange\", \"slots\": {\"house_place\": \"البيت\", \"color_type\": \"اصفر ذهبي\", \"time\": \"على ستة الليل\"}}"}
+{"id": "massive-9110", "raw": "{\"intent\": \"calendar_set\", \"slots\": {\"event_name\": \"معرض ملتقى ألوان\", \"place_name\": \"السعودية\", \"date\": \"سنة ألفين وسبعطعش\", \"date_value\": \"خمسة وعشرين مارس\"}}"}
+{"id": "massive-9112", "raw": "{\"intent\": \"calendar_remove\", \"slots\": {}}"}
+{"id": "massive-914", "raw": "{\"intent\": \"iot_hue_lightoff\", \"slots\": {}}"}
+{"id": "massive-9182", "raw": "{\"intent\": \"transport_ticket\", \"slots\": {\"transport_type\": \"خططي\", \"place_name\": \"المطار\"}}"}
+{"id": "massive-9193", "raw": "{\"intent\": \"calendar_set\", \"slots\": {}}"}
+{"id": "massive-9237", "raw": "{\"intent\": \"play_radio\", \"slots\": {\"radio_name\": \"one hundred and six point nine\"}}"}
+{"id": "massive-931", "raw": "{\"intent\": \"music_likeness\", \"slots\": {}}"}
+{"id": "massive-9406", "raw": "{\"intent\": \"play_radio\", \"slots\": {\"radio_name\": \"sirius xm radio\"}}"}
+{"id": "massive-944", "raw": "{\"intent\": \"datetime_convert\", \"slots\": {\"place_name\": \"الكويت\"}}"}
+{"id": "massive-9524", "raw": "{\"intent\": \"play_radio\", \"slots\": {\"radio_name\": \"اكس ام تين\"}}"}
+{"id": "massive-9541", "raw": "{\"intent\": \"play_radio\", \"slots\": {}}"}
+{"id": "massive-9592", "raw": "{\"intent\": \"play_radio\", \"slots\": {\"radio_name\": \"قضية الرجل\"}}"}
+{"id": "massive-9694", "raw": "{\"intent\": \"play_music\", \"slots\": {\"song_name\": \"يطلق\"}}"}
+{"id": "massive-9815", "raw": "{\"intent\": \"play_audiobook\", \"slots\": {\"player_setting\": \"اعادة التشغيل\", \"media_type\": \"audiobook\"}}"}
+{"id": "massive-9851", "raw": "{\"intent\": \"play_audiobook\", \"slots\": {\"player_setting\": \"كمل\", \"audiobook_name\": \"الأيدي الناعمة\"}}"}
+{"id": "massive-9902", "raw": "{\"intent\": \"play_audiobook\", \"slots\": {\"media_type\": \"audio book\", \"audiobook_name\": \"love\"}}"}
+{"id": "massive-9923", "raw": "{\"intent\": \"cooking_recipe\", \"slots\": {\"cooking_type\": \"سلق\", \"food_type\": \"البيض\"}}"}
+{"id": "massive-9941", "raw": "{\"intent\": \"cooking_recipe\", \"slots\": {\"food_type\": \"دجاج بالزبده\"}}"}

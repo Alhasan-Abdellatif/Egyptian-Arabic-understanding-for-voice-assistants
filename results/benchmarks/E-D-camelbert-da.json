@@ -1,0 +1,18 @@
+{
+  "name": "E-D-camelbert-da",
+  "backend": "encoder",
+  "model": "models/E-D-camelbert-da",
+  "adapter": null,
+  "prompt": "full",
+  "n": 50,
+  "warmup": 3,
+  "latency_s": {
+    "n": 50,
+    "mean": 0.0095,
+    "p50": 0.0081,
+    "p90": 0.0159,
+    "p95": 0.0167,
+    "p99": 0.0193,
+    "max": 0.0193
+  }
+}

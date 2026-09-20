@@ -80,8 +80,9 @@ quantize:        ## 4-bit local copy of MLX_MODEL -> models/$(MLX_TAG)-4bit (nee
 .PHONY: report figures examples
 report:          ## regenerate results/summary.md from results/
 	$(PY) -m lahja.eval.report --pairs D-$(MLX_TAG):C-$(MLX_TAG) E-D-$(ENC_TAG):E-C-$(ENC_TAG) \
-		E-D-$(ENC_TAG):D-$(MLX_TAG) D-qwen3-17b:C-qwen3-17b D-qwen3-17b:D-$(MLX_TAG) \
-		A_sonnet5_5shot:A_sonnet5_zeroshot D-qwen3-17b:A_sonnet5_5shot E-D-$(ENC_TAG):A_sonnet5_5shot
+		E-D-$(ENC_TAG):D-$(MLX_TAG) E-D-$(ENC_TAG):D-qwen3-17b D-qwen3-17b:C-qwen3-17b D-qwen3-17b:D-$(MLX_TAG) \
+		A_sonnet5_5shot:A_sonnet5_zeroshot D-qwen3-17b:A_sonnet5_5shot E-D-$(ENC_TAG):A_sonnet5_5shot \
+		D-qwen3-17b-4bit:D-qwen3-17b-mlx D-qwen3-17b-mlx:D-qwen3-17b E-D-$(ENC_TAG):D-qwen3-17b-4bit
 
 figures:         ## render report figures into results/figures/
 	$(PY) -m lahja.eval.figures

@@ -17,8 +17,9 @@ against a frontier LLM (Claude Sonnet 5, zero-shot **and** 5-shot) and an untrai
 
 1. Synthetic Egyptian data gives the **encoder a significant +6.0 points** on Egyptian, with no
    loss on MSA — but gives the **LLMs nothing measurable** at either size.
-2. A **110M encoder matches a 1.7B LLM** (0.625 vs 0.590, difference not significant) at **25×
-   lower latency**, and both beat the frontier model by 15–19 points.
+2. A **110M encoder matches a 1.7B LLM** (0.625 vs 0.590, n.s.) at **43× lower latency**, and
+   beats the *quantized* 1.7B outright (+7.0 pts, significant) — so shrinking the LLM enough to
+   ship it on a phone hands the win to the encoder.
 3. The frontier model's deficit is almost entirely **annotation conventions**, not comprehension.
 4. **Showing it five examples does not fix that** (0.440 → 0.435, n.s.). Conventions here are
    learned from thousands of labelled examples, not demonstrated in a prompt.
@@ -47,10 +48,10 @@ short commands like "امسح المنبه" that any two writers phrase identica
 
 | Model | Params | Intent acc | Slot F1 | Exact match | 95% CI | EM clean | p50 latency |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| **E-D** encoder + Egyptian | 110M | 0.825 | 0.665 | **0.625** | [0.56, 0.69] | 0.608 | 0.02 s |
-| **D** Qwen3-1.7B + Egyptian | 1.7B | 0.795 | 0.682 | **0.590** | [0.52, 0.66] | 0.569 | — |
+| **E-D** encoder + Egyptian | 110M | 0.825 | 0.665 | **0.625** | [0.56, 0.69] | 0.608 | 8 ms |
+| **D** Qwen3-1.7B + Egyptian | 1.7B | 0.795 | 0.682 | **0.590** | [0.52, 0.66] | 0.569 | 345 ms ‡ |
 | **C** Qwen3-1.7B, MSA only | 1.7B | 0.775 | 0.649 | 0.575 | [0.51, 0.64] | 0.547 | — |
-| **E-C** encoder, MSA only | 110M | 0.805 | 0.628 | 0.565 | [0.49, 0.63] | 0.541 | 0.02 s |
+| **E-C** encoder, MSA only | 110M | 0.805 | 0.628 | 0.565 | [0.49, 0.63] | 0.541 | 8 ms |
 | **D** Qwen3-0.6B + Egyptian | 596M | 0.730 | 0.599 | 0.510 | [0.44, 0.57] | 0.492 | 0.55 s |
 | **C** Qwen3-0.6B, MSA only | 596M | 0.725 | 0.588 | 0.485 | [0.42, 0.56] | 0.453 | 0.55 s |
 | **A** Sonnet 5, zero-shot | — | 0.785 | 0.503 | 0.440 | [0.38, 0.51] | 0.420 | API |
@@ -58,6 +59,8 @@ short commands like "امسح المنبه" that any two writers phrase identica
 | **B** Qwen3-0.6B untrained, 5-shot | 596M | 0.260 | 0.100 | 0.040 | [0.01, 0.07] | 0.039 | 1.06 s |
 
 Every model emitted **valid JSON on 100%** of items; no constrained decoding was used.
+‡ latency of the 4-bit MLX build; the accuracy on this row is the fp16 model's. The 4-bit build
+scores 0.555 on Egyptian and 0.577 on MSA — see §4.
 
 ![Exact match on the MASSIVE test set](../results/figures/headline_massive.png)
 
@@ -109,11 +112,55 @@ commands carry no such marker — they are lexically close to MSA.
 
 Scaling the LLM from 0.6B to 1.7B is worth **+8.0 points** on Egyptian [+2.0, +14.5] and +4.9 on
 MASSIVE — both significant, and both larger than anything the data mix achieved. But the 110M
-encoder still edges the 1.7B LLM (+3.5 points, not significant), at **0.02 s vs 0.55 s** per query
-and 15× fewer parameters.
+encoder still edges the 1.7B LLM (+3.5 points, not significant), at **8 ms vs 345 ms** per command
+(4-bit) and 15× fewer parameters.
 
 For a fixed schema, tagging spans beats generating them: the encoder cannot invent a slot value,
 while the LLM must reproduce it character-for-character.
+
+### Measured latency and size
+
+All on one 16GB M4, 50 commands each, issued one at a time, warm-up discarded
+(`python -m lahja.eval.bench`). Each model runs on the runtime it would actually deploy with, so
+this is a deployment comparison, not a pure-architecture one.
+
+| Model | Runtime | Weights on disk | p50 | p90 | p95 |
+|---|---|---:|---:|---:|---:|
+| CAMeLBERT 110M encoder | PyTorch / MPS | 417 MB | **8 ms** | 16 ms | 17 ms |
+| Qwen3-1.7B + LoRA, 4-bit | MLX | 948 MB | **345 ms** | 430 ms | 485 ms |
+| Qwen3-1.7B + LoRA, fp16 | MLX | 3.2 GB | **881 ms** | 1,238 ms | 1,260 ms |
+
+Two things fall out. **4-bit quantization buys 2.6× lower latency and 3.4× less disk** than fp16 —
+the difference between a model that fits comfortably on a phone and one that does not. And the
+110M encoder is still **43× faster than the quantized 1.7B**, at a quarter of its size, while
+scoring at least as well on the Egyptian test set.
+
+### What 4-bit costs in accuracy
+
+The MLX fp16 build is the control: same weights as the GPU run, different runtime. It reproduces
+that run to within one or two items, so the port itself is faithful and any remaining difference
+is the quantization.
+
+| Build | Egyptian test | MASSIVE test | Disk | p50 |
+|---|---:|---:|---:|---:|
+| GPU (transformers, bf16) | 0.590 | 0.583 | — | — |
+| MLX fp16 | **0.595** | 0.577 | 3.2 GB | 881 ms |
+| MLX 4-bit | **0.555** | 0.577 | 948 MB | 345 ms |
+
+| Paired comparison | Egyptian test | MASSIVE test |
+|---|---|---|
+| MLX fp16 − GPU (runtime fidelity) | +0.5 pts, 1 item differs | −0.7 pts, 2 items differ |
+| **4-bit − fp16 (quantization cost)** | **−4.0 pts** [−8.0, 0.0], n.s. (p = 0.10) | **0.0 pts** [−3.3, +3.3] |
+
+**Quantization is free on MSA and not obviously free on the dialect.** MASSIVE is unchanged to
+three decimals. On Egyptian the 4-bit build loses 4 points: 13 items it gets wrong that fp16 got
+right, against 5 the other way. At n=200 that misses significance (p = 0.10), but the direction is
+consistent and it is exactly where you would expect precision loss to bite — dialectal inputs sit
+further from the pretraining distribution, so the model's margins there are thinner.
+
+The practical read: **4-bit is the right trade for MSA, and needs a bigger test set before you
+trust it for Egyptian.** It also flips the headline comparison — against the shippable 4-bit build,
+the 110M encoder's Egyptian advantage becomes significant (+7.0 pts [+1.5, +12.5]).
 
 ## 5. Error analysis
 

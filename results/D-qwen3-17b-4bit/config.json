@@ -1,0 +1,18 @@
+{
+  "backend": "mlx",
+  "model": "models/D-qwen3-17b-mlx-4bit",
+  "run_name": "D-qwen3-17b-4bit",
+  "eval_set": [
+    "data/processed/egy_test.jsonl",
+    "data/processed/massive_ar_test.jsonl"
+  ],
+  "limit": 300,
+  "shots": 0,
+  "shots_from": "data/processed/massive_ar_train.jsonl",
+  "prompt": "sft",
+  "adapter": null,
+  "effort": "low",
+  "workers": 8,
+  "chunk": 32,
+  "fresh": false
+}

@@ -44,7 +44,7 @@ From Python:
 ```python
 from lahja.predict import Predictor
 
-nlu = Predictor()                      # 110M encoder: ~20 ms/command, runs on a laptop CPU
+nlu = Predictor()                      # 110M encoder: ~8 ms/command, runs on a laptop CPU
 print(nlu(["امسح المنبه", "ضيف البروكلي لقائمة البقالة"]))
 ```
 
@@ -65,18 +65,28 @@ print(nlu(["امسح المنبه", "ضيف البروكلي لقائمة الب
 Exact match means intent **and** every slot correct, on 200 Egyptian commands written by a native
 speaker. Full report, figures and error analysis: **[docs/results.md](docs/results.md)**.
 
-| Model | Egyptian test | MASSIVE test (Saudi/MSA) | Latency |
+| Model | Egyptian test | MASSIVE test (Saudi/MSA) | Latency on an M4 |
 |---|---:|---:|---:|
-| **CAMeLBERT 110M** (default) | **0.625** | 0.586 | 20 ms |
-| Qwen3-1.7B + LoRA | 0.590 | 0.583 | — |
-| Qwen3-0.6B + LoRA | 0.510 | 0.539 | 550 ms |
+| **CAMeLBERT 110M** (default) | **0.625** | 0.586 | **8 ms** |
+| Qwen3-1.7B + LoRA, fp16 | 0.595 | 0.577 | 881 ms |
+| Qwen3-1.7B + LoRA, 4-bit | 0.555 | 0.577 | 345 ms |
+| Qwen3-0.6B + LoRA | 0.510 | 0.539 | 550 ms † |
 | Claude Sonnet 5, 5-shot | 0.435 | 0.450 | ~1 s (API) |
 | Qwen3-0.6B untrained, 5-shot | 0.040 | 0.030 | — |
+
+† measured during evaluation rather than with the dedicated benchmark; the rest are `make bench-*`
+p50 over 50 single commands. 4-bit quantization costs nothing on MSA and about 4 points on the
+dialect set (not significant at n=200) while cutting size 3.4× and latency 2.6×.
 
 Fine-tuning beats prompting a frontier model by **+15.5 points** (95% CI [+8.5, +22.5], paired
 bootstrap): its errors are the dataset's labelling conventions, not Arabic comprehension, and five
 examples don't fix that. Synthetic Egyptian data gives the encoder a significant **+6.0**; the
 Qwen3 models gain nothing measurable overall, but **~+6 on dialect-marked sentences**.
+
+**On device**, 4-bit quantization is what makes the 1.7B shippable — 3.2 GB → 948 MB, 881 → 345 ms
+— and it is free on MSA (0.577 either way) but costs ~4 points on the dialect (p = 0.10). That
+flips the headline: against the *quantized* model, the 110M encoder's Egyptian lead becomes
+statistically significant (**+7.0 pts** [+1.5, +12.5]).
 
 ## Reproduce it
 

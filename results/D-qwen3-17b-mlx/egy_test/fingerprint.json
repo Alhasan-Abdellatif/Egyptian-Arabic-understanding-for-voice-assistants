@@ -1,0 +1,14 @@
+{
+  "backend": "mlx",
+  "model": "models/D-qwen3-17b-mlx",
+  "adapter": null,
+  "prompt": "sft",
+  "shots": 0,
+  "weights": [
+    [
+      "model.safetensors",
+      3441185131,
+      1789914648
+    ]
+  ]
+}

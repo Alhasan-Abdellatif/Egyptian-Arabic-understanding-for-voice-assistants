@@ -1,0 +1,18 @@
+{
+  "name": "D-17b-mlx-fp16",
+  "backend": "mlx",
+  "model": "models/D-qwen3-17b-mlx",
+  "adapter": null,
+  "prompt": "sft",
+  "n": 50,
+  "warmup": 3,
+  "latency_s": {
+    "n": 50,
+    "mean": 0.9005,
+    "p50": 0.8814,
+    "p90": 1.2379,
+    "p95": 1.2602,
+    "p99": 1.5072,
+    "max": 1.5072
+  }
+}
