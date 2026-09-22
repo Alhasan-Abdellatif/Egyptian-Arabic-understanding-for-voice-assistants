@@ -13,7 +13,7 @@ exact match. Two training mixes, held to an identical optimizer budget:
 Each mix was trained on three backbones (110M encoder, Qwen3-0.6B, Qwen3-1.7B) and compared
 against a frontier LLM (Claude Sonnet 5, zero-shot **and** 5-shot) and an untrained 5-shot baseline.
 
-**Four findings:**
+**Five findings:**
 
 1. Synthetic Egyptian data gives the **encoder a significant +6.0 points** on Egyptian, with no
    loss on MSA — but gives the **LLMs nothing measurable** at either size.
@@ -23,6 +23,9 @@ against a frontier LLM (Claude Sonnet 5, zero-shot **and** 5-shot) and an untrai
 3. The frontier model's deficit is almost entirely **annotation conventions**, not comprehension.
 4. **Showing it five examples does not fix that** (0.440 → 0.435, n.s.). Conventions here are
    learned from thousands of labelled examples, not demonstrated in a prompt.
+5. **4-bit quantization is free on MSA but costs ~4 points on the Egyptian set** (p = 0.10) while
+   cutting the 1.7B's size 3.4× and latency 2.6×. The lost items are intent errors, spread evenly
+   across dialect-marked and unmarked sentences.
 
 ---
 
@@ -49,18 +52,21 @@ short commands like "امسح المنبه" that any two writers phrase identica
 | Model | Params | Intent acc | Slot F1 | Exact match | 95% CI | EM clean | p50 latency |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | **E-D** encoder + Egyptian | 110M | 0.825 | 0.665 | **0.625** | [0.56, 0.69] | 0.608 | 8 ms |
-| **D** Qwen3-1.7B + Egyptian | 1.7B | 0.795 | 0.682 | **0.590** | [0.52, 0.66] | 0.569 | 345 ms ‡ |
+| **D** Qwen3-1.7B + Egyptian | 1.7B | 0.795 | 0.682 | **0.590** | [0.52, 0.66] | 0.569 | — |
+| ↳ same, MLX fp16 | 1.7B | 0.795 | 0.688 | 0.595 | [0.53, 0.67] | 0.575 | 881 ms |
+| ↳ same, MLX 4-bit | 1.7B | 0.760 | 0.655 | 0.555 | [0.48, 0.62] | 0.530 | 345 ms |
 | **C** Qwen3-1.7B, MSA only | 1.7B | 0.775 | 0.649 | 0.575 | [0.51, 0.64] | 0.547 | — |
 | **E-C** encoder, MSA only | 110M | 0.805 | 0.628 | 0.565 | [0.49, 0.63] | 0.541 | 8 ms |
-| **D** Qwen3-0.6B + Egyptian | 596M | 0.730 | 0.599 | 0.510 | [0.44, 0.57] | 0.492 | 0.55 s |
-| **C** Qwen3-0.6B, MSA only | 596M | 0.725 | 0.588 | 0.485 | [0.42, 0.56] | 0.453 | 0.55 s |
+| **D** Qwen3-0.6B + Egyptian | 596M | 0.730 | 0.599 | 0.510 | [0.44, 0.57] | 0.492 | 550 ms † |
+| **C** Qwen3-0.6B, MSA only | 596M | 0.725 | 0.588 | 0.485 | [0.42, 0.56] | 0.453 | 550 ms † |
 | **A** Sonnet 5, zero-shot | — | 0.785 | 0.503 | 0.440 | [0.38, 0.51] | 0.420 | API |
 | **A** Sonnet 5, 5-shot | — | 0.815 | 0.500 | 0.435 | [0.37, 0.50] | 0.409 | API |
-| **B** Qwen3-0.6B untrained, 5-shot | 596M | 0.260 | 0.100 | 0.040 | [0.01, 0.07] | 0.039 | 1.06 s |
+| **B** Qwen3-0.6B untrained, 5-shot | 596M | 0.260 | 0.100 | 0.040 | [0.01, 0.07] | 0.039 | 1,060 ms † |
 
 Every model emitted **valid JSON on 100%** of items; no constrained decoding was used.
-‡ latency of the 4-bit MLX build; the accuracy on this row is the fp16 model's. The 4-bit build
-scores 0.555 on Egyptian and 0.577 on MSA — see §4.
+Latency is the dedicated benchmark's p50 on an M4 (§4), except † rows, which were timed during
+evaluation (warm-up included, so slightly pessimistic). The GPU run has none because it wasn't run
+on the same machine. The ↳ rows are the same fine-tuned weights, converted for on-device use.
 
 ![Exact match on the MASSIVE test set](../results/figures/headline_massive.png)
 
@@ -69,6 +75,8 @@ scores 0.555 on Egyptian and 0.577 on MSA — see §4.
 | **C** Qwen3-1.7B, MSA only | 0.857 | 0.707 | **0.607** | [0.56, 0.66] | 0.581 |
 | **E-D** encoder + Egyptian | 0.835 | 0.684 | 0.586 | [0.56, 0.62] | 0.564 |
 | **D** Qwen3-1.7B + Egyptian | 0.840 | 0.697 | 0.583 | [0.53, 0.64] | 0.559 |
+| ↳ same, MLX 4-bit | 0.840 | 0.697 | 0.577 | [0.52, 0.63] | 0.555 |
+| ↳ same, MLX fp16 | 0.837 | 0.686 | 0.577 | [0.52, 0.64] | 0.551 |
 | **E-C** encoder, MSA only | 0.829 | 0.665 | 0.567 | [0.54, 0.60] | 0.542 |
 | **C** Qwen3-0.6B, MSA only | 0.791 | 0.678 | 0.563 | [0.53, 0.59] | 0.538 |
 | **D** Qwen3-0.6B + Egyptian | 0.783 | 0.652 | 0.539 | [0.51, 0.57] | 0.512 |
@@ -112,8 +120,8 @@ commands carry no such marker — they are lexically close to MSA.
 
 Scaling the LLM from 0.6B to 1.7B is worth **+8.0 points** on Egyptian [+2.0, +14.5] and +4.9 on
 MASSIVE — both significant, and both larger than anything the data mix achieved. But the 110M
-encoder still edges the 1.7B LLM (+3.5 points, not significant), at **8 ms vs 345 ms** per command
-(4-bit) and 15× fewer parameters.
+encoder still edges the 1.7B LLM — +3.5 points against the fp16 build (n.s.) and +7.0 against the
+4-bit build (significant) — at **8 ms versus 345–881 ms** per command and 15× fewer parameters.
 
 For a fixed schema, tagging spans beats generating them: the encoder cannot invent a slot value,
 while the LLM must reproduce it character-for-character.
@@ -155,8 +163,15 @@ is the quantization.
 **Quantization is free on MSA and not obviously free on the dialect.** MASSIVE is unchanged to
 three decimals. On Egyptian the 4-bit build loses 4 points: 13 items it gets wrong that fp16 got
 right, against 5 the other way. At n=200 that misses significance (p = 0.10), but the direction is
-consistent and it is exactly where you would expect precision loss to bite — dialectal inputs sit
-further from the pretraining distribution, so the model's margins there are thinner.
+consistent.
+
+It is **not** a dialect effect, though that was the obvious guess. Within the Egyptian set the loss
+is spread evenly — −3.1 points on dialect-marked sentences, −4.4 on unmarked ones — and it is almost
+entirely **intent** errors (48 wrong intents against 41, while slot-only errors move 40 → 41). The
+better explanation is distribution distance in general: MASSIVE test resembles the training data
+closely, so the model's decisions there have wide margins that 4-bit rounding can't flip; the
+human-written Egyptian commands are further out whether or not they carry dialect markers, so
+margins are thinner and the intent choice tips first.
 
 The practical read: **4-bit is the right trade for MSA, and needs a bigger test set before you
 trust it for Egyptian.** It also flips the headline comparison — against the shippable 4-bit build,
@@ -170,6 +185,7 @@ the 110M encoder's Egyptian advantage becomes significant (+7.0 pts [+1.5, +12.5
 |---|---:|---:|---:|
 | E-D encoder + Egyptian | 125 | 35 | 40 |
 | D Qwen3-1.7B + Egyptian | 118 | 41 | 41 |
+| ↳ same, MLX 4-bit | 111 | **48** | 41 |
 | C Qwen3-1.7B | 115 | 45 | 40 |
 | E-C encoder | 113 | 39 | 48 |
 | D Qwen3-0.6B + Egyptian | 102 | 54 | 44 |
@@ -250,6 +266,11 @@ data against a native-written sample before training on it.
 - **MASSIVE rows for the 1.7B models and A use n=300**, not 1000, so their intervals are wider.
 - Generation and the human test set both derive from MASSIVE, so its domain (smart-speaker
   commands) bounds all conclusions.
+- **Quantization was measured on one model** (the 1.7B) at one setting (4-bit, default group
+  size). 8-bit, other group sizes, and the 0.6B were not tried.
+- **Latency is from one machine** (16GB M4) with each model on its native runtime — PyTorch/MPS for
+  the encoder, MLX for the LLMs — so ratios mix architecture and framework effects. It is not a
+  phone measurement; production on-device deployment would go through Core ML.
 
 ## 8. Reproducing
 
@@ -257,10 +278,24 @@ data against a native-written sample before training on it.
 make setup && make download && make data     # MASSIVE -> data/processed
 make pilot && make submit && make collect    # generate Egyptian rewrites (Claude, batch)
 make synth && make sft                       # filter -> data/sft/{C,D}
-make train-mlx-D && make train-enc-D         # train (see docs/larger_models.md, docs/colab.md)
+make train-mlx-D && make train-enc-D         # train (docs/training-apple-silicon.md, docs/training-gpu.md)
 make eval-mlx-D && make eval-enc-D
 make report && make figures                  # -> results/summary.md, results/figures/
 ```
+
+On-device builds and latency (Apple silicon):
+
+```bash
+# merge the PEFT adapter into Qwen3-1.7B, then convert (fp16) and quantize (4-bit) for MLX
+python -m mlx_lm convert --hf-path models/D-qwen3-17b-merged --mlx-path models/D-qwen3-17b-mlx
+python -m mlx_lm convert --hf-path models/D-qwen3-17b-merged -q --q-bits 4 \
+    --mlx-path models/D-qwen3-17b-mlx-4bit
+python -m lahja.eval.bench --backend mlx --model models/D-qwen3-17b-mlx-4bit --prompt sft --name D-17b-4bit
+make bench-encoder
+```
+
+transformers ≥ 5 saves `rope_theta` inside `rope_parameters`; mlx-lm expects it at the top level
+of `config.json`, so hoist it there before converting a model merged with a recent transformers.
 
 Model A's evaluation ran through the Batches API for **$0.49**. All evaluation goes through one
 code path (`lahja.eval.run_eval`), so encoder, local LLM, and API predictions are scored by
