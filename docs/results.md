@@ -23,9 +23,10 @@ against a frontier LLM (Claude Sonnet 5, zero-shot **and** 5-shot) and an untrai
 3. The frontier model's deficit is almost entirely **annotation conventions**, not comprehension.
 4. **Showing it five examples does not fix that** (0.440 → 0.435, n.s.). Conventions here are
    learned from thousands of labelled examples, not demonstrated in a prompt.
-5. **4-bit quantization is free on MSA but costs ~4 points on the Egyptian set** (p = 0.10) while
-   cutting the 1.7B's size 3.4× and latency 2.6×. The lost items are intent errors, spread evenly
-   across dialect-marked and unmarked sentences.
+5. **4-bit quantization has no net cost on MSA but costs ~4 points on the Egyptian set** (p = 0.10)
+   while cutting the 1.7B's size 3.4× and latency 2.6×. It changes ~22% of outputs on both sets.
+   Only on Egyptian do the changes lean negative, mostly as intent errors, and evenly across
+   dialect-marked and unmarked sentences.
 
 ---
 
@@ -75,14 +76,18 @@ on the same machine. The ↳ rows are the same fine-tuned weights, converted for
 | **C** Qwen3-1.7B, MSA only | 0.857 | 0.707 | **0.607** | [0.56, 0.66] | 0.581 |
 | **E-D** encoder + Egyptian | 0.835 | 0.684 | 0.586 | [0.56, 0.62] | 0.564 |
 | **D** Qwen3-1.7B + Egyptian | 0.840 | 0.697 | 0.583 | [0.53, 0.64] | 0.559 |
-| ↳ same, MLX 4-bit | 0.840 | 0.697 | 0.577 | [0.52, 0.63] | 0.555 |
 | ↳ same, MLX fp16 | 0.837 | 0.686 | 0.577 | [0.52, 0.64] | 0.551 |
+| ↳ same, MLX 4-bit | 0.840 | 0.697 | 0.577 | [0.52, 0.63] | 0.555 |
 | **E-C** encoder, MSA only | 0.829 | 0.665 | 0.567 | [0.54, 0.60] | 0.542 |
 | **C** Qwen3-0.6B, MSA only | 0.791 | 0.678 | 0.563 | [0.53, 0.59] | 0.538 |
 | **D** Qwen3-0.6B + Egyptian | 0.783 | 0.652 | 0.539 | [0.51, 0.57] | 0.512 |
 | **A** Sonnet 5, 5-shot | 0.813 | 0.569 | 0.450 | [0.40, 0.50] | 0.434 |
 | **A** Sonnet 5, zero-shot | 0.807 | 0.554 | 0.447 | [0.39, 0.50] | 0.430 |
 | **B** Qwen3-0.6B untrained | 0.310 | 0.122 | 0.030 | [0.02, 0.04] | 0.024 |
+
+The 4-bit build's slightly higher intent accuracy and slot F1 here are noise, not a quantization
+gain: intent differs by one item in 300, and exact match is tied, with 11 items won and 11 lost
+(§4).
 
 ## 3. Does the synthetic Egyptian data help?
 
@@ -160,18 +165,19 @@ is the quantization.
 | MLX fp16 − GPU (runtime fidelity) | +0.5 pts, 1 item differs | −0.7 pts, 2 items differ |
 | **4-bit − fp16 (quantization cost)** | **−4.0 pts** [−8.0, 0.0], n.s. (p = 0.10) | **0.0 pts** [−3.3, +3.3] |
 
-**Quantization is free on MSA and not obviously free on the dialect.** MASSIVE is unchanged to
-three decimals. On Egyptian the 4-bit build loses 4 points: 13 items it gets wrong that fp16 got
-right, against 5 the other way. At n=200 that misses significance (p = 0.10), but the direction is
-consistent.
+**Quantization has no net cost on MSA and may cost something on the dialect.** 4-bit rounding
+changes a similar share of outputs on both sets: 65 of 300 on MASSIVE (22%) and 45 of 200 on
+Egyptian (22.5%). On MASSIVE those changes cancel out: 11 items become exact matches and 11 stop
+being exact matches, so the score is identical and the small intent and slot-F1 differences are
+noise. On Egyptian they don't cancel: 13 items lost against 5 gained, −4 points. With only 18
+items changing, a 13–5 split misses significance (p = 0.10), so this may still be chance.
 
 It is **not** a dialect effect, though that was the obvious guess. Within the Egyptian set the loss
-is spread evenly — −3.1 points on dialect-marked sentences, −4.4 on unmarked ones — and it is almost
-entirely **intent** errors (48 wrong intents against 41, while slot-only errors move 40 → 41). The
-better explanation is distribution distance in general: MASSIVE test resembles the training data
-closely, so the model's decisions there have wide margins that 4-bit rounding can't flip; the
-human-written Egyptian commands are further out whether or not they carry dialect markers, so
-margins are thinner and the intent choice tips first.
+is spread evenly: −3.1 points on dialect-marked sentences and −4.4 on unmarked ones. It is almost
+entirely **intent** errors (48 wrong intents against 41, while slot-only errors move 40 → 41).
+Because quantization shifts outputs equally often on both sets, "MSA is robust to rounding" is not
+the explanation either. The only open question is whether the changes on Egyptian lean negative
+for a real reason, and 200 items are too few to answer it.
 
 The practical read: **4-bit is the right trade for MSA, and needs a bigger test set before you
 trust it for Egyptian.** It also flips the headline comparison — against the shippable 4-bit build,
